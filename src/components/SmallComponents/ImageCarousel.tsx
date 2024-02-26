@@ -27,35 +27,38 @@ interface ImageCarouselProps {
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
-    <Carousel
-      swipeable
-      draggable
-      showDots={true}
-      responsive={responsive}
-      infinite={true}
-      autoPlay
-      autoPlaySpeed={3000}
-      keyBoardControl={true}
-      customTransition="transform 500ms ease-in-out"
-      transitionDuration={500}
-    >
-      {images.map((image, index) => (
-        <Box key={image} mx={0.2}>
-          <Image
-            src={image}
-            alt={`Image ${index}`}
-            width={100}
-            height={100}
-            style={{
-              width: "100%",
-              height: "400px",
-              objectFit: "cover",
-              borderRadius: "10px",
-            }}
-          />
-        </Box>
-      ))}
-    </Carousel>
+    <>
+      <Carousel
+        swipeable
+        draggable
+        showDots={true}
+        responsive={responsive}
+        infinite={true}
+        autoPlay
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
+        customTransition="transform 500ms ease-in-out"
+        transitionDuration={500}
+      >
+        {images.map((image, index) => (
+          <Box key={image} mx={0.2}>
+            <Image
+              src={image}
+              alt={`Image ${index}`}
+              width={100}
+              height={100}
+              style={{
+                width: "100%",
+                height: "400px",
+                objectFit: "cover",
+                borderRadius: "10px",
+                border: "1px solid #e0e0e0",
+              }}
+            />
+          </Box>
+        ))}
+      </Carousel>
+    </>
   );
 };
 

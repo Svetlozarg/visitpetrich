@@ -1,24 +1,60 @@
 "use client";
 import { useEffect, useState } from "react";
-import { AppBar, Toolbar, IconButton, Stack, Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, Stack, Typography } from "@mui/material";
 import Logo from "./Logo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Drawer from "./Drawer";
+import HomeIcon from "@mui/icons-material/Home";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import VrpanoIcon from "@mui/icons-material/Vrpano";
+import StadiumIcon from "@mui/icons-material/Stadium";
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
+import LuggageIcon from "@mui/icons-material/Luggage";
+import ArticleIcon from "@mui/icons-material/Article";
 
 type Page = {
   name: string;
   url: string;
+  icon: React.ReactElement<any, any>;
 };
 
 export const pages: Page[] = [
-  { name: "Начало", url: "/" },
-  { name: "За Петрич", url: "/about" },
-  { name: "Туризъм", url: "/tourism" },
-  { name: "Култура", url: "/culture" },
-  { name: "Спорт", url: "/sport" },
-  { name: "Настаняване", url: "/accommodation" },
-  { name: "Контакти", url: "/contact" },
+  {
+    name: "Начало",
+    url: "/",
+    icon: <HomeIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "История",
+    url: "/about",
+    icon: <LocationCityIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Туризъм",
+    url: "/tourism",
+    icon: <VrpanoIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Култура",
+    url: "/culture",
+    icon: <StadiumIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Спорт",
+    url: "/sport",
+    icon: <DirectionsBikeIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Настаняване",
+    url: "/accommodation",
+    icon: <LuggageIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Събития",
+    url: "/events",
+    icon: <ArticleIcon sx={{ color: "primary.main" }} />,
+  },
 ];
 
 function Topbar() {
@@ -59,9 +95,7 @@ function Topbar() {
           <Logo />
 
           <Stack sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton>
-              <MenuIcon />
-            </IconButton>
+            <Drawer scrollPosition={scrollPosition} />
           </Stack>
 
           <Stack
