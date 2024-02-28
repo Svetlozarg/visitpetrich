@@ -11,7 +11,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   title,
   subtitle,
   image,
-  imagePosition = "bottom center",
+  imagePosition = "center center",
 }) => {
   return (
     <Stack
@@ -24,7 +24,6 @@ const PageHeader: React.FC<PageHeaderProps> = ({
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: imagePosition,
-        backgroundAttachment: "fixed",
       }}
     >
       <Typography component="h2" variant="h2" color="white" textAlign="center">

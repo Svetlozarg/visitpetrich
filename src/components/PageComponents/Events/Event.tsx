@@ -31,7 +31,7 @@ const Event: React.FC<EventType> = ({
     <Stack
       width="100%"
       maxWidth="400px"
-      height="430px"
+      height="440px"
       sx={{
         cursor: "pointer",
         boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.1)",
@@ -52,9 +52,9 @@ const Event: React.FC<EventType> = ({
         }}
       />
 
-      <Stack p={2} gap={2}>
+      <Stack p={2} gap={1}>
         <Typography component="h4" variant="h4" textAlign="center">
-          {title}
+          {title.length > 57 ? `${title.slice(0, 57)}...` : title}
         </Typography>
 
         <Stack
