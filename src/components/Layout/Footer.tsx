@@ -3,6 +3,7 @@ import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import { pages } from "./Topbar";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = () => {
@@ -89,9 +90,23 @@ const Footer = () => {
               alignItems="center"
               gap={1}
             >
+              <LocationOnIcon />
+              <Typography component="p" variant="body1">
+                ул. „Цар Борис III” № 24
+              </Typography>
+            </Stack>
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              gap={1}
+            >
               <LocalPhoneIcon />
               <Typography component="p" variant="body1">
-                0886 888 888
+                Тел: 0745/69112,
+              </Typography>
+              <Typography component="p" variant="body1">
+                Факс: 0745/62090
               </Typography>
             </Stack>
             <Stack
@@ -102,7 +117,7 @@ const Footer = () => {
             >
               <EmailIcon />
               <Typography component="p" variant="body1">
-                example@example.com
+                oa_petrich@mbox.contact.bg
               </Typography>
             </Stack>
           </Stack>

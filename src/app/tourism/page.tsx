@@ -43,7 +43,7 @@ const TourismPage = () => {
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
       />
 
-      <Stack p={8}>
+      <Stack p={{ xs: 2, sm: 2, md: 8 }}>
         <Typography
           component="h2"
           variant="h2"
@@ -103,7 +103,7 @@ const TourismPage = () => {
           justifyContent="center"
           alignItems="flex-start"
           gap={4}
-          p={10}
+          p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
             src="https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-museum_7VZpceUwp.jpg?updatedAt=1708164126233"
@@ -158,7 +158,7 @@ const TourismPage = () => {
           justifyContent="center"
           alignItems="flex-start"
           gap={4}
-          p={10}
+          p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
             src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg?updatedAt=1708330237287"
@@ -214,7 +214,7 @@ const TourismPage = () => {
           justifyContent="center"
           alignItems="flex-start"
           gap={4}
-          p={10}
+          p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
             src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091"
@@ -265,7 +265,7 @@ const TourismPage = () => {
           justifyContent="center"
           alignItems="flex-start"
           gap={4}
-          p={10}
+          p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
             src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09006_vicgp-nL9.jpg?updatedAt=1708330148550"

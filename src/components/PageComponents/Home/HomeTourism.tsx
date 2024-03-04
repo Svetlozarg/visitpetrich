@@ -15,7 +15,7 @@ const HomeTourism = () => {
         l: "row",
       }}
       gap={4}
-      p={10}
+      p={{ xs: 2, sm: 2, md: 10 }}
     >
       <Stack width="100%" maxWidth="600px" gap={3}>
         <Typography component="h4" variant="h2">

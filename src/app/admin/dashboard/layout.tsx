@@ -1,23 +1,25 @@
 "use client";
-import Footer from "@/components/Layout/Footer";
-import Topbar from "@/components/Layout/Topbar";
+import AdminDrawer from "@/components/Layout/AdminLayout/AdminDrawer";
+import { USERNAME } from "@/helpers/helpers";
 import ThemeRegistry from "@/theme/ThemeRegistry";
-import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
+  useEffect(() => {
+    if (!USERNAME) {
+      window.location.href = "/admin";
+    }
+  }, []);
 
   return (
     <html lang="en">
       <ThemeRegistry>
         <body style={{ overflowX: "hidden" }}>
-          {!pathname.includes("admin") ? <Topbar /> : null}
-          {children}
-          {!pathname.includes("admin") ? <Footer /> : null}
+          <AdminDrawer>{children}</AdminDrawer>
         </body>
       </ThemeRegistry>
     </html>

@@ -3,29 +3,19 @@ import Image from "next/image";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PlaceIcon from "@mui/icons-material/Place";
 import Button from "@/components/MUIComponents/Button";
+import { Event as EventDataType } from "@/services/Events/apiEventsSnippets";
+import { useRouter } from "next/navigation";
 
-export type EventType = {
-  id: string;
-  title: string;
-  place: string;
-  startDate: Date;
-  endDate: Date;
-  image: string;
-};
+export type EventType = EventDataType;
 
 const Event: React.FC<EventType> = ({
+  _id,
   title,
-  place,
+  location,
   startDate,
   endDate,
-  image,
 }) => {
-  const formatDateTime = (date: Date) => {
-    const day = date.getDate().toString().padStart(2, "0");
-    const month = date.toLocaleDateString("bg-BG", { month: "short" });
-    const year = date.getFullYear();
-    return `${day}.${month}.${year}`;
-  };
+  const router = useRouter();
 
   return (
     <Stack
@@ -38,7 +28,7 @@ const Event: React.FC<EventType> = ({
       }}
     >
       <Image
-        src={image}
+        src="https://ik.imagekit.io/obelussoft/VisitPetrich/960-600-pfk-belasica-petrich-emblema_p8-wJr5Lh.jpg?updatedAt=1708979363747"
         alt="Park Petrich"
         width={100}
         height={100}
@@ -65,7 +55,7 @@ const Event: React.FC<EventType> = ({
         >
           <PlaceIcon sx={{ color: "primary.main" }} />
           <Typography component="p" variant="body1" textAlign="center">
-            {place}
+            {location}
           </Typography>
         </Stack>
 
@@ -77,12 +67,23 @@ const Event: React.FC<EventType> = ({
         >
           <CalendarMonthIcon sx={{ color: "primary.main" }} />
           <Typography component="p" variant="body1" textAlign="center">
-            {`${formatDateTime(startDate)} - ${formatDateTime(endDate)}`}
+            {`${new Date(startDate).toLocaleString("bg-BG", {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric",
+            })} - ${new Date(endDate).toLocaleString("bg-BG", {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric",
+            })}`}
           </Typography>
         </Stack>
       </Stack>
 
-      <Button message="Виж повече" />
+      <Button
+        message="Виж повече"
+        onClick={() => router.push(`/events/event?id=${_id}`, { scroll: true })}
+      />
     </Stack>
   );
 };

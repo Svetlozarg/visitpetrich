@@ -1,10 +1,36 @@
-import { Stack, Typography } from "@mui/material";
+"use client";
+import { useEffect, useState } from "react";
+import { CircularProgress, Stack, Typography } from "@mui/material";
 import PlaceIcon from "@mui/icons-material/Place";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LinkIcon from "@mui/icons-material/Link";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { useSearchParams } from "next/navigation";
+import { callApi } from "@/services/callApi";
+import {
+  Event,
+  GetQuerySingleEventSnippet,
+} from "@/services/Events/apiEventsSnippets";
+import { getQuerySingleEvent } from "@/services/Events/apiEventsGetQueries";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import EventBusyIcon from "@mui/icons-material/EventBusy";
 
 const EventPage = () => {
+  const eventId = useSearchParams().get("id");
+  const [eventData, setEventData] = useState<Event>();
+
+  useEffect(() => {
+    if (!eventId) return;
+    (async () => {
+      const event = await callApi<GetQuerySingleEventSnippet>({
+        query: getQuerySingleEvent(eventId),
+      });
+
+      if (event.success) {
+        setEventData(event.data);
+      }
+    })();
+  }, [eventId]);
+
   return (
     <Stack>
       <Stack
@@ -28,6 +54,12 @@ const EventPage = () => {
         px={2}
         py={8}
       >
+        {!eventData ? (
+          <Stack justifyContent="center" alignItems="center">
+            <CircularProgress size="10rem" />
+          </Stack>
+        ) : null}
+
         <Stack
           direction="row"
           justifyContent="space-between"
@@ -37,66 +69,90 @@ const EventPage = () => {
           mb={3}
         >
           <Stack direction="row" gap={4} flexWrap="wrap">
-            <Stack
-              justifyContent="center"
-              alignItems="center"
-              direction="row"
-              gap={2}
-            >
-              <CalendarMonthIcon />
-              <Typography variant="body1">17-18.02.2024</Typography>
-            </Stack>
-            <Stack
-              justifyContent="center"
-              alignItems="center"
-              direction="row"
-              gap={2}
-            >
-              <PlaceIcon />
-              <Typography variant="body1">Мелник</Typography>
-            </Stack>
+            {eventData && eventData.startDate ? (
+              <Stack
+                justifyContent="center"
+                alignItems="center"
+                direction="row"
+                gap={2}
+              >
+                <EventAvailableIcon />
+                <Typography variant="body1">
+                  {new Date(eventData.startDate).toLocaleString("bg-BG", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </Typography>
+              </Stack>
+            ) : null}
+
+            {eventData && eventData.endDate ? (
+              <Stack
+                justifyContent="center"
+                alignItems="center"
+                direction="row"
+                gap={2}
+              >
+                <EventBusyIcon />
+                <Typography variant="body1">
+                  {new Date(eventData.endDate).toLocaleString("bg-BG", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </Typography>
+              </Stack>
+            ) : null}
+
+            {eventData && eventData.location ? (
+              <Stack
+                justifyContent="center"
+                alignItems="center"
+                direction="row"
+                gap={2}
+              >
+                <PlaceIcon />
+                <Typography variant="body1">{eventData.location}</Typography>
+              </Stack>
+            ) : null}
           </Stack>
           <Stack direction="row" gap={4} flexWrap="wrap">
-            <Stack
-              justifyContent="center"
-              alignItems="center"
-              direction="row"
-              gap={2}
-            >
-              <LocalPhoneIcon />
-              <Typography variant="body1">0888 888 888</Typography>
-            </Stack>
-            <Stack
-              justifyContent="center"
-              alignItems="center"
-              direction="row"
-              gap={2}
-            >
-              <LinkIcon />
-              <Typography variant="body1">www.melnik.bg</Typography>
-            </Stack>
+            {eventData && eventData.phone ? (
+              <Stack
+                justifyContent="center"
+                alignItems="center"
+                direction="row"
+                gap={2}
+              >
+                <LocalPhoneIcon />
+                <Typography variant="body1">{eventData.phone}</Typography>
+              </Stack>
+            ) : null}
+            {eventData && eventData.link ? (
+              <Stack
+                justifyContent="center"
+                alignItems="center"
+                direction="row"
+                gap={2}
+              >
+                <LinkIcon />
+                <Typography variant="body1">{eventData.link}</Typography>
+              </Stack>
+            ) : null}
           </Stack>
         </Stack>
 
         <Typography component="h2" variant="h2" mt={2} mb={4}>
-          Дни на отворените врати в Долината на Струма 2024
+          {eventData?.title}
         </Typography>
 
         <Typography component="p" variant="body1">
-          Традиционните „Дни на отворените врати за винарните от Мелнишко“ се
-          разширяват и тази година обхващат винарни от цялата Долина на Струма!
-        </Typography>
-        <Typography component="p" variant="body1">
-          Дните на отворените врати ще се проведат през уикенда на 17-18.02.2024
-          г., по случай празника на лозарите и винарите Св. Трифон Зарезан.
-        </Typography>
-        <Typography component="p" variant="body1">
-          Винарните от региона отварят вратите си за посетители!
-        </Typography>
-        <Typography component="p" variant="body1">
-          Очаквайте ритуален богослов и зарязване на лозята, турове на
-          винарните, дегустации на новите реколти, музикални и танцови програми
-          на открито с фокус върху върху местното вино и храна.
+          {eventData?.description}
         </Typography>
       </Stack>
     </Stack>

@@ -9,7 +9,7 @@ const HomeAbout = () => {
       alignItems="flex-start"
       flexWrap="wrap"
       gap={4}
-      p={10}
+      p={{ xs: 2, sm: 2, md: 10 }}
     >
       <Image
         src="https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874"

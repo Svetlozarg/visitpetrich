@@ -72,6 +72,14 @@ const PetrichMuseumPage = () => {
           и ученици, организирани и свободни посещения с предварително
           записване.
         </Typography>
+
+        <iframe
+          width="100%"
+          height="600"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%20%D0%9F%D0%B5%D1%82%D1%80%D0%B8%D1%87,%20%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,%20%D1%83%D0%BB.%20%E2%80%9E%D0%A0%D0%BE%D0%BA%D1%84%D0%B5%D0%BB%D0%B5%D1%80%E2%80%9C%2080,%202850%20%D0%9F%D0%B5%D1%82%D1%80%D0%B8%D1%87+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style={{ border: 0 }}
+        />
       </Stack>
 
       <Stack width="100%" px={1} textAlign="center" mb={4}>

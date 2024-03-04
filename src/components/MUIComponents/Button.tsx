@@ -14,6 +14,7 @@ interface ButtonProps {
     | "warning";
   type?: "button" | "submit" | "reset" | undefined;
   sx?: SxProps<Theme>;
+  disabled?: boolean;
   onClick?: () => void;
 }
 
@@ -24,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   color = "primary",
   type,
   sx,
+  disabled,
   onClick,
 }) => {
   return (
@@ -38,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({
         fontWeight: "bold",
         letterSpacing: "1px",
       }}
+      disabled={disabled}
     >
       {icon && <>{icon} </>}
       {message}

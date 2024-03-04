@@ -9,7 +9,7 @@ const HomeCulture = () => {
       alignItems="flex-start"
       flexWrap="wrap"
       gap={4}
-      p={10}
+      p={{ xs: 2, sm: 2, md: 10 }}
     >
       <Image
         src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%81%D1%82%D0%B5%D0%BD%D0%B0%20(11)_3La4R8zN7.jpg?updatedAt=1708207456870"
