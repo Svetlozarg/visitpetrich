@@ -4,7 +4,6 @@ import { CircularProgress, Stack, Typography } from "@mui/material";
 import PlaceIcon from "@mui/icons-material/Place";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LinkIcon from "@mui/icons-material/Link";
-import { useSearchParams } from "next/navigation";
 import { callApi } from "@/services/callApi";
 import {
   Event,
@@ -15,10 +14,10 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import EventBusyIcon from "@mui/icons-material/EventBusy";
 
 const EventPage = () => {
-  const eventId = useSearchParams().get("id");
   const [eventData, setEventData] = useState<Event>();
 
   useEffect(() => {
+    const eventId = new URLSearchParams(window.location.search).get("id");
     if (!eventId) return;
     (async () => {
       const event = await callApi<GetQuerySingleEventSnippet>({
@@ -29,7 +28,7 @@ const EventPage = () => {
         setEventData(event.data);
       }
     })();
-  }, [eventId]);
+  }, []);
 
   return (
     <Stack>
