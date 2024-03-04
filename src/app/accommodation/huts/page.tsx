@@ -29,7 +29,7 @@ const HotelsPage = () => {
     <Stack>
       <PageHeader
         title="Хижи и бунгала"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/hotel-petrich_1wEZi2Rx_.jpg?updatedAt=1708164126007"
+        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%BF%D0%B5%D1%82%D1%80_7rqxZd3WO.png?updatedAt=1709586646698"
       />
 
       <Stack width="100%" maxWidth="1400px" py={10} px={2} m="0 auto">
