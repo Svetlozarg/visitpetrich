@@ -30,6 +30,55 @@ const SightSeeingsData = [
       "https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09006_vicgp-nL9.jpg?updatedAt=1708330148550",
     link: "/tourism/house-of-vanga",
   },
+
+  {
+    title: "Народно читалище",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/6ad6ca1de1cec26247d3460327ff11b4_jpg0_205014_71073-632x358-1-1_8eHv7LanV.jpg?updatedAt=1709643104722",
+    link: "/tourism/narodno-chitalishte",
+  },
+  {
+    title: "Гяур Калеси",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/9e423ca765e3b8f100e563c1bedcd97b_jpg2_205378_54516404_837756569891941_790626204142010368_n_b3liXanqh.jpg?updatedAt=1709643176904",
+    link: "/tourism/giaur-kalesi",
+  },
+  {
+    title: "Паметници",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/629abda2950e29b43b3e44ca4cb0367a_jpg0_205114_1200px-Petrich_STA50206_kuB8mU3nq.jpg?updatedAt=1709643222627",
+    link: "/tourism/pametnici",
+  },
+  {
+    title: "Винен туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/223b7e13d1236e45c96efccc9ee4f1bc_jpg0_%D0%A0%D1%83%D0%BF%D0%B5%D0%BB1_HedrJCUh4.jpg?updatedAt=1709643323469",
+    link: "/tourism/vinen-turizam",
+  },
+  {
+    title: "Фестивали",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24f0bf1d31e381c4c3d2191ca421d4fa_jpg5_snimka_igri-1_coRd3RwTo.jpg?updatedAt=1709643381398",
+    link: "/tourism/fastivali",
+  },
+  {
+    title: "Манастири",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/587097f7e4116af6187724b09279cf0f_jpg2_204758_1200px-Chourilovo-Monastery-1067x800_GZTJBiYTo.jpg?updatedAt=1709643524175",
+    link: "/tourism/manastiri",
+  },
+  {
+    title: "Водопади",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24e22a50b90864d67eba71aee9d719a7_jpg2_204767_IMG_2677-1-1292x800_G6fR4zAkl.jpg?updatedAt=1709643592225",
+    link: "/tourism/vodopadi",
+  },
+  {
+    title: "Селски туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg?updatedAt=1709643684315",
+    link: "/tourism/selski-turizam",
+  },
 ];
 
 const TourismPage = () => {
@@ -71,8 +120,8 @@ const TourismPage = () => {
             <Stack
               key={index}
               width="100%"
-              maxWidth="350px"
-              height="350px"
+              maxWidth="250px"
+              height="250px"
               justifyContent="center"
               alignItems="center"
               sx={{
@@ -89,7 +138,12 @@ const TourismPage = () => {
               }}
               onClick={() => router.push(sightseeing.link, { scroll: true })}
             >
-              <Typography component="h4" variant="h3" color="common.white">
+              <Typography
+                component="h4"
+                variant="h3"
+                color="common.white"
+                textAlign="center"
+              >
                 {sightseeing.title}
               </Typography>
             </Stack>

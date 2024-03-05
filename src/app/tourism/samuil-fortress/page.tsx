@@ -12,7 +12,7 @@ const IMAGES_DATA = [
 
 const PetrichMuseumPage = () => {
   return (
-    <Stack justifyContent="center" alignItems="center">
+    <Stack>
       <PageHeader
         title="Самуилова Крепост"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09097-min_mY7FalG3w.jpg?updatedAt=1708343708532"
@@ -20,7 +20,6 @@ const PetrichMuseumPage = () => {
 
       <Stack
         width="100%"
-        maxWidth="1200px"
         gap={3}
         px={{ xs: 2, sm: 2, md: 10 }}
         py={{ xs: 10, sm: 10, md: 10 }}
