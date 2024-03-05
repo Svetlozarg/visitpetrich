@@ -39,14 +39,21 @@ const AccommodationPage = () => {
         {placesData ? (
           <Stack gap={10}>
             <Stack>
-              <Typography component="h2" variant="h2" mb={4}>
+              <Typography
+                component="h2"
+                variant="h2"
+                mb={4}
+                textAlign={{ xs: "center", sx: "center", md: "left" }}
+              >
                 Хотели
               </Typography>
 
               <Stack
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
+                flexWrap="wrap"
+                gap={1}
               >
                 {placesData
                   .filter((place) => place.category === "hotel")
@@ -70,14 +77,21 @@ const AccommodationPage = () => {
             </Stack>
 
             <Stack>
-              <Typography component="h2" variant="h2" mb={4}>
+              <Typography
+                component="h2"
+                variant="h2"
+                mb={4}
+                textAlign={{ xs: "center", sx: "center", md: "left" }}
+              >
                 Къщи за гости
               </Typography>
 
               <Stack
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
+                flexWrap="wrap"
+                gap={1}
               >
                 {placesData
                   .filter((place) => place.category === "house")
@@ -101,14 +115,21 @@ const AccommodationPage = () => {
             </Stack>
 
             <Stack>
-              <Typography component="h2" variant="h2" mb={4}>
+              <Typography
+                component="h2"
+                variant="h2"
+                mb={4}
+                textAlign={{ xs: "center", sx: "center", md: "left" }}
+              >
                 Хижи и бунгала
               </Typography>
 
               <Stack
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
+                flexWrap="wrap"
+                gap={1}
               >
                 {placesData
                   .filter((place) => place.category === "hut")

@@ -1,31 +1,29 @@
-import { Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Stack, Typography } from "@mui/material";
 
 const HomeAbout = () => {
   return (
     <Stack
       direction="row"
       justifyContent="center"
-      alignItems="flex-start"
-      flexWrap="wrap"
       gap={4}
       p={{ xs: 2, sm: 2, md: 10 }}
+      flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
     >
-      <Image
-        src="https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874"
-        alt="Park Petrich"
-        width={100}
-        height={100}
-        style={{
+      <Box
+        sx={{
           width: "100%",
           maxWidth: "800px",
-          height: "450px",
-          objectFit: "cover",
+          height: "500px",
+          backgroundImage:
+            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
           borderRadius: "10px",
         }}
-      />
+      ></Box>
 
-      <Stack width="100%" maxWidth="600px" gap={3}>
+      <Stack width="100%" maxWidth={{ md: "600px" }} gap={3}>
         <Typography component="h4" variant="h2">
           За Града
         </Typography>

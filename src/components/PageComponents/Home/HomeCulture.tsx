@@ -1,5 +1,4 @@
-import { Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Stack, Typography } from "@mui/material";
 
 const HomeCulture = () => {
   return (
@@ -7,24 +6,24 @@ const HomeCulture = () => {
       direction="row"
       justifyContent="center"
       alignItems="flex-start"
-      flexWrap="wrap"
+      flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
       gap={4}
       p={{ xs: 2, sm: 2, md: 10 }}
     >
-      <Image
-        src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%81%D1%82%D0%B5%D0%BD%D0%B0%20(11)_3La4R8zN7.jpg?updatedAt=1708207456870"
-        alt="Park Petrich"
-        width={100}
-        height={100}
-        style={{
+      <Box
+        sx={{
           width: "100%",
           maxWidth: "800px",
-          height: "450px",
-          objectFit: "cover",
+          height: "500px",
+          backgroundImage:
+            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%81%D1%82%D0%B5%D0%BD%D0%B0%20(11)_3La4R8zN7.jpg?updatedAt=1708207456870')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
           borderRadius: "10px",
         }}
-      />
-      <Stack width="100%" maxWidth="600px" gap={2}>
+      ></Box>
+      <Stack width="100%" maxWidth={{ md: "600px" }} gap={2}>
         <Typography component="h4" variant="h2">
           Културно развитие
         </Typography>

@@ -10,8 +10,8 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ data }) => {
   return (
     <Link href={data.url} target="_blank">
       <Stack
-        width="350px"
-        height="350px"
+        width={{ xs: "250px", sm: "250px", md: "450px", lg: "450px" }}
+        height={{ xs: "250px", sm: "250px", md: "450px", lg: "450px" }}
         bgcolor="red"
         borderRadius="10px"
         justifyContent="center"

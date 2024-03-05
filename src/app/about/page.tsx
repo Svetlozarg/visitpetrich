@@ -1,6 +1,6 @@
 "use client";
 import PageHeader from "@/components/SmallComponents/PageHeader";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
 const AboutPetrichPage = () => {
@@ -16,23 +16,24 @@ const AboutPetrichPage = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="flex-start"
-          flexWrap="wrap"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack width="100%" maxWidth="600px" gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "600px" }} gap={2}>
             <Typography component="h4" variant="h2">
               История на града
             </Typography>
@@ -110,35 +111,35 @@ const AboutPetrichPage = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
-          flexWrap="wrap"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0847a_R7eHOrore.jpg?updatedAt=1708205353626"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
-              maxWidth: "700px",
-              height: "450px",
-              objectFit: "cover",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0847a_R7eHOrore.jpg?updatedAt=1708205353626')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0272_Gf0BX4qu7.JPG?updatedAt=1708205354139"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+          ></Box>
+          <Box
+            sx={{
               width: "100%",
-              maxWidth: "700px",
-              height: "450px",
-              objectFit: "cover",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0272_Gf0BX4qu7.JPG?updatedAt=1708205354139')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
+          ></Box>
         </Stack>
 
         <Stack width="100%" gap={3} my={4}>
@@ -194,10 +195,10 @@ const AboutPetrichPage = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="flex-start"
-          flexWrap="wrap"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Stack width="100%" maxWidth="600px" gap={2}>
+          <Stack width="100%" maxWidth={{ md: "600px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Историческо наследство
             </Typography>
@@ -229,19 +230,20 @@ const AboutPetrichPage = () => {
               на културни идеи между жители и посетители.
             </Typography>
           </Stack>
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363604672"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363604672')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
+          ></Box>
         </Stack>
 
         <Stack gap={2}>

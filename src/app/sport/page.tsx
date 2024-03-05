@@ -1,6 +1,5 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import PageHeader from "@/components/SmallComponents/PageHeader";
-import Image from "next/image";
 
 const SportPage = () => {
   return (
@@ -13,25 +12,27 @@ const SportPage = () => {
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/960-600-pfk-belasica-petrich-emblema_p8-wJr5Lh.jpg?updatedAt=1708979363747"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "600px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/960-600-pfk-belasica-petrich-emblema_p8-wJr5Lh.jpg?updatedAt=1708979363747')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Популярни спортни дейности
             </Typography>
@@ -73,25 +74,27 @@ const SportPage = () => {
         </Stack>
 
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/350761705_7068233026537440_1868652382409506776_n_EzEBCwuHg.jpg?updatedAt=1708978630631"
-            alt="Hose of Vanga"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/350761705_7068233026537440_1868652382409506776_n_EzEBCwuHg.jpg?updatedAt=1708978630631')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack width="100%" maxWidth="700px" gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Велосипедни маршрути
             </Typography>
@@ -146,25 +149,27 @@ const SportPage = () => {
         </Stack>
 
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/9c4a08f245d934c7d315104170991e10_jpg3_205124_%D0%9F%D0%BE-%D0%B1%D0%B8%D0%BB%D0%BE%D1%82%D0%BE-%D0%91%D0%B5%D0%BB%D0%B0%D1%81%D0%B8%D1%86%D0%B0-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0_U4Ak3meRJ.jpg?updatedAt=1709641133385"
-            alt="Hose of Vanga"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/9c4a08f245d934c7d315104170991e10_jpg3_205124_%D0%9F%D0%BE-%D0%B1%D0%B8%D0%BB%D0%BE%D1%82%D0%BE-%D0%91%D0%B5%D0%BB%D0%B0%D1%81%D0%B8%D1%86%D0%B0-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0_U4Ak3meRJ.jpg?updatedAt=1709641133385')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack width="100%" maxWidth="700px" gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Планински Маршрути
             </Typography>
@@ -207,25 +212,27 @@ const SportPage = () => {
         </Stack>
 
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/523ec2803a5546be2cad5a544840fc55_jpg0_205180_DSC_0379-1368x800_693xTQsfAE.jpg?updatedAt=1709640994373"
-            alt="Hose of Vanga"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/523ec2803a5546be2cad5a544840fc55_jpg0_205180_DSC_0379-1368x800_693xTQsfAE.jpg?updatedAt=1709640994373')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack width="100%" maxWidth="700px" gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Кратки туристически маршрути
             </Typography>
@@ -256,25 +263,27 @@ const SportPage = () => {
         </Stack>
 
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/b9637934b8909e315ba81685a9d2dee8_jpg2_205016_43372283_2000142363410329_2888507511063707648_n_riNjB8k14.jpg?updatedAt=1709641188006"
-            alt="Hose of Vanga"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "450px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/b9637934b8909e315ba81685a9d2dee8_jpg2_205016_43372283_2000142363410329_2888507511063707648_n_riNjB8k14.jpg?updatedAt=1709641188006')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack width="100%" maxWidth="700px" gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Тематични туристически маршрути
             </Typography>
@@ -302,25 +311,27 @@ const SportPage = () => {
         </Stack>
 
         <Stack
-          direction={{ md: "column", lg: "row" }}
+          direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           gap={4}
         >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/enlarge_snimka_teren-8-min_W3bIk36J_.jpg?updatedAt=1708977790745"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
+          <Box
+            sx={{
               width: "100%",
               maxWidth: "800px",
-              height: "600px",
-              objectFit: "cover",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/enlarge_snimka_teren-8-min_W3bIk36J_.jpg?updatedAt=1708977790745')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
               borderRadius: "10px",
             }}
-          />
-          <Stack gap={2}>
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
             <Typography component="h4" variant="h2">
               Спортни съоръжения и обекти
             </Typography>

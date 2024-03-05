@@ -1,5 +1,4 @@
-import { Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Stack, Typography } from "@mui/material";
 
 const HomeTourism = () => {
   return (
@@ -7,7 +6,7 @@ const HomeTourism = () => {
       direction="row"
       justifyContent="center"
       alignItems="flex-start"
-      flexWrap="wrap"
+      flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
       flexDirection={{
         xs: "column-reverse",
         sm: "column-reverse",
@@ -16,8 +15,9 @@ const HomeTourism = () => {
       }}
       gap={4}
       p={{ xs: 2, sm: 2, md: 10 }}
+      my={{ xs: 8, sm: 8, md: 0 }}
     >
-      <Stack width="100%" maxWidth="600px" gap={3}>
+      <Stack width="100%" maxWidth={{ md: "600px" }} gap={3}>
         <Typography component="h4" variant="h2">
           Туризъм
         </Typography>
@@ -51,19 +51,20 @@ const HomeTourism = () => {
           пътуване в миналото и автентичността на региона.
         </Typography>
       </Stack>
-      <Image
-        src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091"
-        alt="Park Petrich"
-        width={100}
-        height={100}
-        style={{
+
+      <Box
+        sx={{
           width: "100%",
           maxWidth: "800px",
           height: "500px",
-          objectFit: "cover",
+          backgroundImage:
+            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
           borderRadius: "10px",
         }}
-      />
+      ></Box>
     </Stack>
   );
 };
