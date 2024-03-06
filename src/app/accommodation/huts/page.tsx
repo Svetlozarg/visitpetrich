@@ -37,8 +37,10 @@ const HotelsPage = () => {
           <Stack gap={10}>
             <Stack
               direction="row"
-              justifyContent="space-between"
+              justifyContent="center"
               alignItems="center"
+              flexWrap="wrap"
+              gap={1}
             >
               {placesData
                 .filter((place) => place.category === "hut")
