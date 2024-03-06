@@ -9,6 +9,7 @@ export type Query = {
   input?: string;
   multipart?: boolean;
   blob?: boolean;
+  requireAuth?: boolean;
 };
 
 export type CallApiParams = {
