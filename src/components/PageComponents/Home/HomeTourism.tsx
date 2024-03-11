@@ -18,7 +18,7 @@ const HomeTourism = () => {
       my={{ xs: 8, sm: 8, md: 0 }}
     >
       <Stack width="100%" maxWidth={{ md: "600px" }} gap={3}>
-        <Typography component="h4" variant="h2">
+        <Typography component="h4" variant="h3">
           Туризъм
         </Typography>
 

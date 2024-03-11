@@ -42,7 +42,7 @@ const EventsPage = () => {
             py={10}
             px={4}
           >
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Предстоящи събития
             </Typography>
 
@@ -71,7 +71,7 @@ const EventsPage = () => {
             py={10}
             px={4}
           >
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Минали събития
             </Typography>
             <Stack direction="row" gap={2}>

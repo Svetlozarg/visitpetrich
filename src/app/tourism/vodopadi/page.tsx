@@ -32,7 +32,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Ключки водопад
             </Typography>
 
@@ -80,7 +80,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Яворнишки водопад
             </Typography>
 
@@ -126,7 +126,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Каменишки водопад
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
@@ -176,7 +176,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Лешников водопад
             </Typography>
 
@@ -220,7 +220,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Водопад Дъбница
             </Typography>
 
@@ -266,7 +266,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Водопад Мангъро
             </Typography>
 

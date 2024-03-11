@@ -5,12 +5,59 @@ const SportPage = () => {
   return (
     <Stack>
       <PageHeader
-        title="Спортният Дух на град Петрич"
-        subtitle="Вдъхновение, Движение, Победа"
+        title="Спортният Дух на Петрич"
+        subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/enlarge_snimka_teren-8-min_W3bIk36J_.jpg?updatedAt=1708977790745"
       />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
+          gap={4}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage:
+                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/enlarge_snimka_teren-8-min_W3bIk36J_.jpg?updatedAt=1708977790745')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              borderRadius: "10px",
+            }}
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
+            <Typography component="h4" variant="h3">
+              Спортни съоръжения и обекти
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              Петрич разполага с разнообразие от съвременни спортни съоръжения и
+              обекти, които предоставят идеални условия за практикуване на
+              различни спортове и физически активности. Като част от
+              инфраструктурата на града е и новопостроената спортна зала, както
+              и добре развита училищна инфраструктура, която стимулира спортната
+              дейност сред учениците.
+            </Typography>
+            <ul>
+              <li>“Арена Петрич”</li>
+              <li>тенис комплекс “Нушеви”</li>
+              <li>спортна зала “Серафим Бързаков”</li>
+              <li>фитнес клуб “TopAll”</li>
+              <li>фитнес клуб “Explode”</li>
+              <li>“G Fit Aerobics”</li>
+              <li>Спортен клуб “ENergy”</li>
+              <li>тенис комплекс “Федя”</li>
+            </ul>
+          </Stack>
+        </Stack>
+
         <Stack
           direction="row"
           justifyContent="center"
@@ -33,7 +80,7 @@ const SportPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Популярни спортни дейности
             </Typography>
 
@@ -95,7 +142,7 @@ const SportPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Велосипедни маршрути
             </Typography>
 
@@ -170,24 +217,23 @@ const SportPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Планински Маршрути
             </Typography>
 
             <ul>
               <li>
-                град Петрич (стадиона) – хижа Беласица – хижа Конгур – връх
-                Конгур (5 часа)
-              </li>
-              <li>град Петрич – хижа Беласица (1 час 30 мин)</li>
-              <li>
-                град Петрич – хижа Беласица – Лешнишки водопад – с. Беласица (5
+                Петрич (стадиона) – хижа Беласица – хижа Конгур – връх Конгур (5
                 часа)
+              </li>
+              <li>Петрич – хижа Беласица (1 час 30 мин)</li>
+              <li>
+                Петрич – хижа Беласица – Лешнишки водопад – с. Беласица (5 часа)
               </li>
               <li>хижа Беласица – хижа Конгур (1 час 30 мин)</li>
               <li>
-                град Петрич (Младежки дом) – местност Папреница – местност
-                Божкиното – местност Лопатара – връх Конгур (5 часа)
+                Петрич (Младежки дом) – местност Папреница – местност Божкиното
+                – местност Лопатара – връх Конгур (5 часа)
               </li>
               <li>хижа Конгур – връх Конгур – връх Радомир (5 часа)</li>
               <li>
@@ -233,7 +279,7 @@ const SportPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Кратки туристически маршрути
             </Typography>
 
@@ -284,7 +330,7 @@ const SportPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Тематични туристически маршрути
             </Typography>
 
@@ -306,53 +352,6 @@ const SportPage = () => {
               <li>„Цветна приказка“</li>
               <li>„Кълвачите – пазители на горите“</li>
               <li>„Път на Самуиловите воини”</li>
-            </ul>
-          </Stack>
-        </Stack>
-
-        <Stack
-          direction="row"
-          justifyContent="center"
-          alignItems="flex-start"
-          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
-          gap={4}
-        >
-          <Box
-            sx={{
-              width: "100%",
-              maxWidth: "800px",
-              height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/enlarge_snimka_teren-8-min_W3bIk36J_.jpg?updatedAt=1708977790745')",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              borderRadius: "10px",
-            }}
-          ></Box>
-
-          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
-            <Typography component="h4" variant="h2">
-              Спортни съоръжения и обекти
-            </Typography>
-
-            <Typography component="p" variant="body1" textAlign="justify">
-              Петрич разполага с разнообразие от съвременни спортни съоръжения и
-              обекти, които предоставят идеални условия за практикуване на
-              различни спортове и физически активности. Като част от
-              инфраструктурата на града е и новопостроената спортна зала, както
-              и добре развита училищна инфраструктура, която стимулира спортната
-              дейност сред учениците.
-            </Typography>
-            <ul>
-              <li>“Арена Петрич”</li>
-              <li>тенис комплекс “Нушеви”</li>
-              <li>спортна зала “Серафим Бързаков”</li>
-              <li>фитнес клуб “TopAll”</li>
-              <li>фитнес клуб “Explode”</li>
-              <li>“G Fit Aerobics”</li>
-              <li>Спортен клуб “ENergy”</li>
-              <li>тенис комплекс “Федя”</li>
             </ul>
           </Stack>
         </Stack>

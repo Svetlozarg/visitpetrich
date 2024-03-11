@@ -5,6 +5,8 @@ import { pages } from "./Topbar";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
@@ -22,7 +24,7 @@ const Footer = () => {
       >
         <Stack>
           <Typography component="h6" variant="h3" mb={4}>
-            Град Петрич
+            Петрич
           </Typography>
 
           <Typography component="p" variant="body1" maxWidth="400px" mb={2}>
@@ -64,17 +66,14 @@ const Footer = () => {
             Връзки
           </Typography>
           <Stack justifyContent="flex-start" alignItems="flex-start" gap={2}>
-            <Link href="" passHref>
-              <Typography
-                component="p"
-                variant="body1"
-                sx={{
-                  transition: "150ms ease-in-out",
-                  "&:hover": { color: "secondary.main" },
-                }}
-              >
-                Предстоящи събития
-              </Typography>
+            <Link href="https://www.facebook.com/tic.petrich" target="_blank">
+              <FacebookIcon sx={{ fontSize: "2.5rem" }} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/visitpetrich/"
+              target="_blank"
+            >
+              <InstagramIcon sx={{ fontSize: "2.5rem" }} />
             </Link>
           </Stack>
         </Stack>
@@ -103,10 +102,7 @@ const Footer = () => {
             >
               <LocalPhoneIcon />
               <Typography component="p" variant="body1">
-                Тел: 0745/69112,
-              </Typography>
-              <Typography component="p" variant="body1">
-                Факс: 0745/62090
+                087 911 9840
               </Typography>
             </Stack>
             <Stack
@@ -117,7 +113,7 @@ const Footer = () => {
             >
               <EmailIcon />
               <Typography component="p" variant="body1">
-                oa_petrich@mbox.contact.bg
+                tic@oapetrich.bg
               </Typography>
             </Stack>
           </Stack>

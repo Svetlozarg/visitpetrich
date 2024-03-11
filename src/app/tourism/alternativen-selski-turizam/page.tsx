@@ -32,7 +32,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Долене
             </Typography>
 
@@ -59,10 +59,10 @@ const page = () => {
               Долене Инстаграм: selodolene Уеб страница www.selodolene.com
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
-              Можете да я откриете на 20км. от град Петрич, посока Северна
-              Македония, като при отбивката от главният път за селото се
-              преминава през 2 км черен път, който се поддържа проходим за
-              всякакъв вид автомобили.
+              Можете да я откриете на 20км. от Петрич, посока Северна Македония,
+              като при отбивката от главният път за селото се преминава през 2
+              км черен път, който се поддържа проходим за всякакъв вид
+              автомобили.
             </Typography>
           </Stack>
         </Stack>
@@ -87,7 +87,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Боровичене
             </Typography>
 
@@ -143,7 +143,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Рупите
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
@@ -202,7 +202,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Старчево
             </Typography>
 
@@ -258,7 +258,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Марикостиново
             </Typography>
 
@@ -309,7 +309,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Кромидово
             </Typography>
 
@@ -357,7 +357,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Скрът
             </Typography>
 
@@ -411,7 +411,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Ключ
             </Typography>
 
@@ -453,7 +453,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Яворница
             </Typography>
 
@@ -506,7 +506,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Самуилово
             </Typography>
 
@@ -562,7 +562,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Коларово
             </Typography>
 
@@ -610,7 +610,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Беласица
             </Typography>
 
@@ -651,7 +651,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Село Камена
             </Typography>
 

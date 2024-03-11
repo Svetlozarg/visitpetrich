@@ -32,7 +32,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Винарска изба “Орбелус”
             </Typography>
 
@@ -98,7 +98,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Винарна “Орбелия”
             </Typography>
 
@@ -164,7 +164,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Винарна Рупел
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
@@ -223,7 +223,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Винарска изба “Златен Рожен”
             </Typography>
 

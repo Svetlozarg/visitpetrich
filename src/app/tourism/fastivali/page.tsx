@@ -32,7 +32,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               „Южен Гердан”
             </Typography>
 
@@ -71,7 +71,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               „Изгряват Звезди”
             </Typography>
 
@@ -111,7 +111,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               „Южни слънца”
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
@@ -148,7 +148,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Международен фестивал за нова песен „Златен кестен”
             </Typography>
 
@@ -195,7 +195,7 @@ const page = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Станчинарски игри
             </Typography>
 

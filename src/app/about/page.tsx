@@ -7,7 +7,8 @@ const AboutPetrichPage = () => {
   return (
     <Stack>
       <PageHeader
-        title="Град Петрич - История, Красота, Вдъхновение"
+        title="Петрич - История, Красота, Вдъхновение"
+        subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/_Group%200_-6%20images_f7BfZzled.jpg?updatedAt=1708205353498"
       />
 
@@ -34,7 +35,7 @@ const AboutPetrichPage = () => {
           ></Box>
 
           <Stack width="100%" maxWidth={{ md: "600px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               История на града
             </Typography>
 
@@ -143,13 +144,13 @@ const AboutPetrichPage = () => {
         </Stack>
 
         <Stack width="100%" gap={3} my={4}>
-          <Typography component="h4" variant="h2">
+          <Typography component="h4" variant="h3">
             Географско положение и природни дадености
           </Typography>
 
           <Typography component="p" variant="body1" textAlign="justify">
-            Географското положение на град Петрич се намира в югозападната част
-            на България, в подножието на планината Кожух. Географското му
+            Географското положение на Петрич се намира в югозападната част на
+            България, в подножието на планината Кожух. Географското му
             разположение е в южната част на Петричката котловина
           </Typography>
           <Typography component="p" variant="body1" textAlign="justify">
@@ -199,13 +200,13 @@ const AboutPetrichPage = () => {
           gap={4}
         >
           <Stack width="100%" maxWidth={{ md: "600px" }} gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Историческо наследство
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
-              Културното и историческото наследство на град Петрич представлява
-              важен аспект от идентичността и развитието на града през вековете.
+              Културното и историческото наследство на Петрич представлява важен
+              аспект от идентичността и развитието на града през вековете.
               Съчетанието от исторически паметници, музеи, галерии и традиционни
               събития прави Петрич привлекателно място за туристи и културни
               ентусиасти.

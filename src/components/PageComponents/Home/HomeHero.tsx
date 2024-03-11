@@ -24,10 +24,10 @@ const HomeHero = () => {
         gap={4}
       >
         <Typography component="h1" variant="h1" letterSpacing="6px">
-          Град Петрич
+          Туризъм в Петрич
         </Typography>
         <Typography component="h2" variant="h3" letterSpacing="2px">
-          Открийте красотата на града
+          Изживяване отвъд очакването
         </Typography>
 
         <Link href="/about">

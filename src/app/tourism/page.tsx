@@ -74,10 +74,10 @@ const SightSeeingsData = [
     link: "/tourism/vodopadi",
   },
   {
-    title: "Селски туризъм",
+    title: "Алтернативен и Селски туризъм",
     image:
       "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg?updatedAt=1709643684315",
-    link: "/tourism/selski-turizam",
+    link: "/tourism/alternativen-selski-turizam",
   },
 ];
 
@@ -87,14 +87,14 @@ const TourismPage = () => {
   return (
     <Stack>
       <PageHeader
-        title="Туризъм в град Петрич"
-        subtitle="Туристически Приключения в Западната България"
+        title="Туризъм в Петрич"
+        subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
       />
 
       <Stack p={{ xs: 2, sm: 2, md: 8 }}>
         <Typography
-          component="h2"
+          component="h3"
           variant="h2"
           sx={{
             width: "100%",
@@ -173,17 +173,17 @@ const TourismPage = () => {
             }}
           />
           <Stack width="100%" maxWidth="700px" gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Исторически Музей
             </Typography>
 
             <Typography component="p" variant="body1">
-              Историческият музей в град Петрич представлява източник на
-              богатство и разнообразие от исторически артефакти, археологически
-              находки и ценни артефакти, които разказват за миналото на региона.
-              Създаден с цел да запази и представи богатото културно наследство
-              на града и неговите околности, музеят предлага уникален поглед
-              върху историческото развитие на областта през вековете.
+              Историческият музей в Петрич представлява източник на богатство и
+              разнообразие от исторически артефакти, археологически находки и
+              ценни артефакти, които разказват за миналото на региона. Създаден
+              с цел да запази и представи богатото културно наследство на града
+              и неговите околности, музеят предлага уникален поглед върху
+              историческото развитие на областта през вековете.
             </Typography>
             <Typography component="p" variant="body1">
               Посетителите могат да се потопят в миналото чрез изложби,
@@ -228,13 +228,13 @@ const TourismPage = () => {
             }}
           />
           <Stack width="100%" maxWidth="700px" gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Хераклея Синтика
             </Typography>
 
             <Typography component="p" variant="body1">
-              Хераклея Синтика е архелогичен комплекс в близост до град Петрич,
-              който представя величественото свидетелство за богатата история на
+              Хераклея Синтика е архелогичен комплекс в близост до Петрич, който
+              представя величественото свидетелство за богатата история на
               региона. Основан през IV век пр.н.е. от римляните, градът
               преживява свой златен век през периода на римското управление,
               когато става важен център на културата и търговията.
@@ -284,13 +284,13 @@ const TourismPage = () => {
             }}
           />
           <Stack width="100%" maxWidth="700px" gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Самуилова Крепост
             </Typography>
 
             <Typography component="p" variant="body1">
               Самуилова крепост е исторически обект, издигнал се в X век в
-              близост до град Петрич, във важен период от българската история.
+              близост до Петрич, във важен период от българската история.
               Построена по време на управлението на българския цар Самуил,
               крепостта е била не само стратегическо укрепено място, но и символ
               на силата и величието на българското владичество. Крепостта е
@@ -335,7 +335,7 @@ const TourismPage = () => {
             }}
           />
           <Stack width="100%" maxWidth="700px" gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Къща Ванга
             </Typography>
 

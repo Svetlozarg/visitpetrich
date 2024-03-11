@@ -7,7 +7,7 @@ const CulturePage = () => {
     <Stack>
       <PageHeader
         title="Културни събития и Творчески Пътеки"
-        subtitle="Отразената красота, възвишена във времето, вдъхновяваща съвременността"
+        subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%B0%D1%81%D0%B4_kCmgcHf6L.jpg?updatedAt=1708365131671"
       />
 
@@ -18,8 +18,8 @@ const CulturePage = () => {
           flexWrap="wrap"
           gap={4}
         >
-          <Typography component="h4" variant="h2">
-            Културата в град Петрич
+          <Typography component="h4" variant="h3">
+            Културата в Петрич
           </Typography>
           <Image
             src="https://ik.imagekit.io/obelussoft/VisitPetrich/stanchinarski-igri-petrich3_jE6TIk4DXs.jpg?updatedAt=1708365494122"
@@ -78,12 +78,12 @@ const CulturePage = () => {
             }}
           />
           <Stack gap={2}>
-            <Typography component="h4" variant="h2">
+            <Typography component="h4" variant="h3">
               Традиционни фестивали
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
-              Традиционните събития и фестивали в град Петрич са ключови за
+              Традиционните събития и фестивали в Петрич са ключови за
               обогатяването на културния живот и запазването на наследството на
               общността. Всяка година градът оживява с празници, които отразяват
               богатата история, традиции и култура на местните жители.

@@ -24,7 +24,7 @@ const HomeAbout = () => {
       ></Box>
 
       <Stack width="100%" maxWidth={{ md: "600px" }} gap={3}>
-        <Typography component="h4" variant="h2">
+        <Typography component="h4" variant="h3">
           За Града
         </Typography>
         <Typography component="p" variant="body1">
