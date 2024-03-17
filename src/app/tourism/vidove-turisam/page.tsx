@@ -11,16 +11,16 @@ const SightSeeingsData = [
     link: "/tourism/pametnici",
   },
   {
+    title: "Планински туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24e22a50b90864d67eba71aee9d719a7_jpg2_204767_IMG_2677-1-1292x800_G6fR4zAkl.jpg?updatedAt=1709643592225",
+    link: "/tourism/vodopadi",
+  },
+  {
     title: "Винен туризъм",
     image:
       "https://ik.imagekit.io/obelussoft/VisitPetrich/223b7e13d1236e45c96efccc9ee4f1bc_jpg0_%D0%A0%D1%83%D0%BF%D0%B5%D0%BB1_HedrJCUh4.jpg?updatedAt=1709643323469",
     link: "/tourism/vinen-turizam",
-  },
-  {
-    title: "Фестивален туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/24f0bf1d31e381c4c3d2191ca421d4fa_jpg5_snimka_igri-1_coRd3RwTo.jpg?updatedAt=1709643381398",
-    link: "/tourism/fastivali",
   },
   {
     title: "Поклоннически туризъм",
@@ -29,16 +29,16 @@ const SightSeeingsData = [
     link: "/tourism/manastiri",
   },
   {
-    title: "Планински туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/24e22a50b90864d67eba71aee9d719a7_jpg2_204767_IMG_2677-1-1292x800_G6fR4zAkl.jpg?updatedAt=1709643592225",
-    link: "/tourism/vodopadi",
-  },
-  {
     title: "Алтернативен и Селски туризъм",
     image:
       "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg?updatedAt=1709643684315",
     link: "/tourism/alternativen-selski-turizam",
+  },
+  {
+    title: "Фестивален туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24f0bf1d31e381c4c3d2191ca421d4fa_jpg5_snimka_igri-1_coRd3RwTo.jpg?updatedAt=1709643381398",
+    link: "/tourism/fastivali",
   },
 ];
 
