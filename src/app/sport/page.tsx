@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import PageHeader from "@/components/SmallComponents/PageHeader";
+import Link from "next/link";
 
 const SportPage = () => {
   return (
@@ -46,14 +47,78 @@ const SportPage = () => {
               дейност сред учениците.
             </Typography>
             <ul>
-              <li>“Арена Петрич”</li>
-              <li>тенис комплекс “Нушеви”</li>
-              <li>спортна зала “Серафим Бързаков”</li>
-              <li>фитнес клуб “TopAll”</li>
-              <li>фитнес клуб “Explode”</li>
-              <li>“G Fit Aerobics”</li>
-              <li>Спортен клуб “ENergy”</li>
-              <li>тенис комплекс “Федя”</li>
+              <li>
+                <Link
+                  href="https://www.google.com/maps?ll=41.398163,23.210212&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=7894136362560425584"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  “Арена Петрич”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.google.com/maps?ll=41.386758,23.188891&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=722496899041323711"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  тенис комплекс “Нушеви”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.google.com/maps?ll=41.395948,23.201676&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=8323723262365049230"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  спортна зала “Серафим Бързаков”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.google.com/maps/search/Фитнес+Клуб+'TopAll'/@42.315749,25.570571,14z?hl=en&entry=ttu"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  фитнес клуб “TopAll”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/fitnessexplode/"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  фитнес клуб “Explode”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/GFitAerobics/about/?ref=page_internal"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  “G Fit Aerobics”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/energy.petrich"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  Спортен клуб “ENergy”
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.google.com/maps?ll=41.415241,23.210598&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=16934720885453614814"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  тенис комплекс “Федя”
+                </Link>
+              </li>
             </ul>
           </Stack>
         </Stack>

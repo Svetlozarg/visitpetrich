@@ -7,7 +7,7 @@ const page = () => {
   return (
     <Stack>
       <PageHeader
-        title="Паметници"
+        title="Културно-исторически туризъм"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%B7%D0%B0%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B0_riM7gUYCm.jpg?updatedAt=1709645720133"
       />
 

@@ -5,33 +5,73 @@ import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const TOURISM_DATA = [
+const SightSeeingsData = [
   {
-    title: "Забележителности",
+    title: "Исторически Музей",
     image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg",
-    link: "/tourism/sight-seeing",
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-museum_7VZpceUwp.jpg?updatedAt=1708164126233",
+    link: "/tourism/petrich-museum",
   },
   {
-    title: "Видове Туризъм",
+    title: "Хераклея Синтика",
     image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg",
-    link: "/tourism/vidove-turisam",
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg?updatedAt=1708330237287",
+    link: "/tourism/heraclea-sintica",
+  },
+  {
+    title: "Самуилова Крепост",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091",
+    link: "/tourism/samuil-fortress",
+  },
+  {
+    title: "Къща Ванга",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09006_vicgp-nL9.jpg?updatedAt=1708330148550",
+    link: "/tourism/house-of-vanga",
+  },
+  {
+    title: "Народно читалище",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/6ad6ca1de1cec26247d3460327ff11b4_jpg0_205014_71073-632x358-1-1_8eHv7LanV.jpg?updatedAt=1709643104722",
+    link: "/tourism/narodno-chitalishte",
+  },
+  {
+    title: "Гяур Калеси",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/9e423ca765e3b8f100e563c1bedcd97b_jpg2_205378_54516404_837756569891941_790626204142010368_n_b3liXanqh.jpg?updatedAt=1709643176904",
+    link: "/tourism/giaur-kalesi",
   },
 ];
 
-const TourismPage = () => {
+const SightseeingPage = () => {
   const router = useRouter();
 
   return (
     <Stack>
       <PageHeader
-        title="Туризъм в Петрич"
+        title="Забележителности в Петрич"
         subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
       />
 
       <Stack p={{ xs: 2, sm: 2, md: 8 }}>
+        <Typography
+          component="h3"
+          variant="h2"
+          sx={{
+            width: "100%",
+            maxWidth: "700px",
+            borderBottom: "2px solid",
+            borderColor: "common.black",
+            textAlign: "center",
+            m: "0 auto 3rem auto",
+            pb: 2,
+          }}
+        >
+          Забележителности
+        </Typography>
+
         <Stack
           justifyContent="center"
           alignItems="center"
@@ -39,12 +79,12 @@ const TourismPage = () => {
           gap={4}
           flexWrap="wrap"
         >
-          {TOURISM_DATA.map((sightseeing, index) => (
+          {SightSeeingsData.map((sightseeing, index) => (
             <Stack
               key={index}
               width="100%"
-              maxWidth="350px"
-              height="350px"
+              maxWidth="250px"
+              height="250px"
               justifyContent="center"
               alignItems="center"
               sx={{
@@ -63,7 +103,7 @@ const TourismPage = () => {
             >
               <Typography
                 component="h4"
-                variant="h3"
+                variant="h4"
                 color="common.white"
                 textAlign="center"
               >
@@ -297,4 +337,4 @@ const TourismPage = () => {
   );
 };
 
-export default TourismPage;
+export default SightseeingPage;

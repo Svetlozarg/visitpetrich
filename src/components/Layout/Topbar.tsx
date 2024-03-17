@@ -12,6 +12,7 @@ import StadiumIcon from "@mui/icons-material/Stadium";
 import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import ArticleIcon from "@mui/icons-material/Article";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 
 type Page = {
   name: string;
@@ -44,6 +45,11 @@ export const pages: Page[] = [
     name: "Спорт",
     url: "/sport",
     icon: <DirectionsBikeIcon sx={{ color: "primary.main" }} />,
+  },
+  {
+    name: "Забавления",
+    url: "/activities",
+    icon: <SportsEsportsIcon sx={{ color: "primary.main" }} />,
   },
   {
     name: "Настаняване",
@@ -110,6 +116,7 @@ function Topbar() {
                   variant="h4"
                   color={scrollPosition > 150 ? "common.black" : "common.white"}
                   fontWeight="normal"
+                  fontSize={{ md: "1rem", lg: "1.25rem" }}
                   sx={{
                     cursor: "pointer",
                     borderBottom:

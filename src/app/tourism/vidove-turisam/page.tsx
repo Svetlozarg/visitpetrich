@@ -1,37 +1,75 @@
 "use client";
-import Button from "@/components/MUIComponents/Button";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const TOURISM_DATA = [
+const SightSeeingsData = [
   {
-    title: "Забележителности",
+    title: "Културно-исторически туризъм",
     image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg",
-    link: "/tourism/sight-seeing",
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/629abda2950e29b43b3e44ca4cb0367a_jpg0_205114_1200px-Petrich_STA50206_kuB8mU3nq.jpg?updatedAt=1709643222627",
+    link: "/tourism/pametnici",
   },
   {
-    title: "Видове Туризъм",
+    title: "Винен туризъм",
     image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg",
-    link: "/tourism/vidove-turisam",
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/223b7e13d1236e45c96efccc9ee4f1bc_jpg0_%D0%A0%D1%83%D0%BF%D0%B5%D0%BB1_HedrJCUh4.jpg?updatedAt=1709643323469",
+    link: "/tourism/vinen-turizam",
+  },
+  {
+    title: "Фестивален туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24f0bf1d31e381c4c3d2191ca421d4fa_jpg5_snimka_igri-1_coRd3RwTo.jpg?updatedAt=1709643381398",
+    link: "/tourism/fastivali",
+  },
+  {
+    title: "Поклоннически туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/587097f7e4116af6187724b09279cf0f_jpg2_204758_1200px-Chourilovo-Monastery-1067x800_GZTJBiYTo.jpg?updatedAt=1709643524175",
+    link: "/tourism/manastiri",
+  },
+  {
+    title: "Планински туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/24e22a50b90864d67eba71aee9d719a7_jpg2_204767_IMG_2677-1-1292x800_G6fR4zAkl.jpg?updatedAt=1709643592225",
+    link: "/tourism/vodopadi",
+  },
+  {
+    title: "Алтернативен и Селски туризъм",
+    image:
+      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg?updatedAt=1709643684315",
+    link: "/tourism/alternativen-selski-turizam",
   },
 ];
 
-const TourismPage = () => {
+const VidoveTurisamPage = () => {
   const router = useRouter();
 
   return (
     <Stack>
       <PageHeader
-        title="Туризъм в Петрич"
+        title="Видове Туризъм в Петрич"
         subtitle="Изживяване отвъд очакването"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
       />
 
       <Stack p={{ xs: 2, sm: 2, md: 8 }}>
+        <Typography
+          component="h3"
+          variant="h2"
+          sx={{
+            width: "100%",
+            maxWidth: "700px",
+            borderBottom: "2px solid",
+            borderColor: "common.black",
+            textAlign: "center",
+            m: "0 auto 3rem auto",
+            pb: 2,
+          }}
+        >
+          Видове Туризъм
+        </Typography>
+
         <Stack
           justifyContent="center"
           alignItems="center"
@@ -39,12 +77,12 @@ const TourismPage = () => {
           gap={4}
           flexWrap="wrap"
         >
-          {TOURISM_DATA.map((sightseeing, index) => (
+          {SightSeeingsData.map((sightseeing, index) => (
             <Stack
               key={index}
               width="100%"
-              maxWidth="350px"
-              height="350px"
+              maxWidth="250px"
+              height="250px"
               justifyContent="center"
               alignItems="center"
               sx={{
@@ -63,7 +101,7 @@ const TourismPage = () => {
             >
               <Typography
                 component="h4"
-                variant="h3"
+                variant="h4"
                 color="common.white"
                 textAlign="center"
               >
@@ -74,7 +112,7 @@ const TourismPage = () => {
         </Stack>
       </Stack>
 
-      <Stack>
+      {/* <Stack>
         <Stack
           direction={{ md: "column", lg: "row" }}
           justifyContent="center"
@@ -292,9 +330,9 @@ const TourismPage = () => {
             />
           </Stack>
         </Stack>
-      </Stack>
+      </Stack> */}
     </Stack>
   );
 };
 
-export default TourismPage;
+export default VidoveTurisamPage;
