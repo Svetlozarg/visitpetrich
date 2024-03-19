@@ -15,7 +15,7 @@ const HomeAbout = () => {
           maxWidth: "800px",
           height: "500px",
           backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/park-petrich4_Rp7ihwjRW.jpg?updatedAt=1708162220874')",
+            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DJI_0074-min_YexJSmkF_.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",

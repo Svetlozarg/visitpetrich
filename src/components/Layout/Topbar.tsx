@@ -98,7 +98,7 @@ function Topbar() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Logo />
+          <Logo scrollPosition={scrollPosition} />
 
           <Stack sx={{ display: { xs: "flex", md: "none" } }}>
             <Drawer scrollPosition={scrollPosition} />

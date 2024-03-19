@@ -53,7 +53,7 @@ const HomeSport = () => {
           maxWidth: "800px",
           height: "500px",
           backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091')",
+            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DJI_0077-min_mwKV4YC56.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
