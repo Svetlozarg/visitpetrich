@@ -16,7 +16,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   return (
     <Stack
       width="100vw"
-      height="50vh"
+      height="70vh"
       justifyContent="center"
       alignItems="center"
       sx={{

@@ -13,11 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { pages } from "./Topbar";
 import { useRouter } from "next/navigation";
 
-interface DrawerProps {
-  scrollPosition: number;
-}
-
-const Drawer: React.FC<DrawerProps> = ({ scrollPosition }) => {
+const Drawer = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
@@ -47,7 +43,7 @@ const Drawer: React.FC<DrawerProps> = ({ scrollPosition }) => {
       >
         <MenuIcon
           sx={{
-            color: scrollPosition > 150 ? "common.black" : "common.white",
+            color: "common.black",
           }}
         />
       </IconButton>

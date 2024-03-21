@@ -1,5 +1,4 @@
 import { Stack, Typography } from "@mui/material";
-import Image from "next/image";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PlaceIcon from "@mui/icons-material/Place";
 import Button from "@/components/MUIComponents/Button";
@@ -21,27 +20,13 @@ const Event: React.FC<EventType> = ({
     <Stack
       width="100%"
       maxWidth="400px"
-      height="440px"
+      height="200px"
+      justifyContent="space-between"
       sx={{
         cursor: "pointer",
         boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.1)",
       }}
     >
-      <Image
-        src="https://ik.imagekit.io/obelussoft/VisitPetrich/960-600-pfk-belasica-petrich-emblema_p8-wJr5Lh.jpg?updatedAt=1708979363747"
-        alt="Park Petrich"
-        width={100}
-        height={100}
-        style={{
-          width: "100%",
-          height: "250px",
-          objectFit: "cover",
-          borderBottomRightRadius: "50%",
-          borderBottomLeftRadius: "50%",
-          borderBottom: "1px solid #edebeb",
-        }}
-      />
-
       <Stack p={2} gap={1}>
         <Typography component="h4" variant="h4" textAlign="center">
           {title.length > 57 ? `${title.slice(0, 57)}...` : title}

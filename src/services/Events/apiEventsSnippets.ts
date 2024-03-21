@@ -1,5 +1,16 @@
 export type Event = {
   _id: string;
+  category:
+    | "exhibitions"
+    | "conferences"
+    | "seminars"
+    | "festivals"
+    | "celebration event"
+    | "fundraisers"
+    | "sports"
+    | "art event"
+    | "virtual events"
+    | "workshops";
   title: string;
   description: string;
   startDate: Date;

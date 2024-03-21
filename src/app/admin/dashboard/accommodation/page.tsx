@@ -27,11 +27,14 @@ import PlaceForm from "@/components/PageComponents/Accommodation/PlaceForm";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HomeIcon from "@mui/icons-material/Home";
 import VerticalShadesIcon from "@mui/icons-material/VerticalShades";
+import TextField from "@/components/MUIComponents/TextField";
+import SearchIcon from "@mui/icons-material/Search";
 
 export type ModalType = "create" | "edit";
 
 const AdminAccommodationsPage = () => {
   const [placesData, setPlacesData] = useState<Place[]>();
+  const [originalplacesData, setOriginalPlacesData] = useState<Place[]>();
   const [modalData, setModalData] = useState<Place>();
   const [modalType, setModalType] = useState<ModalType>("create");
   const [openModal, setModalOpen] = useState<boolean>(false);
@@ -44,6 +47,7 @@ const AdminAccommodationsPage = () => {
 
       if (eventsData.success) {
         setPlacesData(eventsData.data);
+        setOriginalPlacesData(eventsData.data);
       }
     })();
   }, []);
@@ -66,6 +70,20 @@ const AdminAccommodationsPage = () => {
     }
   };
 
+  const handleSearch = (searchValue: string) => {
+    if (originalplacesData) {
+      if (searchValue === "") {
+        setPlacesData(originalplacesData);
+      } else {
+        setPlacesData(
+          originalplacesData.filter((place) =>
+            place.name.toLowerCase().includes(searchValue.toLowerCase())
+          )
+        );
+      }
+    }
+  };
+
   return (
     <Stack bgcolor="common.white" borderRadius="10px" mt={8} p={5}>
       <Stack justifyContent="space-between" alignItems="center" direction="row">
@@ -81,6 +99,16 @@ const AdminAccommodationsPage = () => {
             setModalOpen(true);
           }}
           disabled={!placesData}
+        />
+      </Stack>
+
+      <Stack width="100%" mt={2}>
+        <TextField
+          label="Търси място за настаняване"
+          icon={<SearchIcon />}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleSearch(e.target.value)
+          }
         />
       </Stack>
 

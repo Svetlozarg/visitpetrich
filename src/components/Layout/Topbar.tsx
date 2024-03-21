@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import { AppBar, Toolbar, Stack, Typography } from "@mui/material";
 import Logo from "./Logo";
 import Link from "next/link";
@@ -65,64 +64,51 @@ export const pages: Page[] = [
 
 function Topbar() {
   const pathname = usePathname();
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
 
   return (
     <AppBar
-      position="fixed"
+      position="relative"
       sx={{
+        height: "120px",
         transition: "250ms ease-in-out",
-        backgroundColor: scrollPosition > 150 ? "common.white" : "transparent",
-        boxShadow:
-          scrollPosition > 150 ? "0px 1px 5px 0px rgba(0,0,0,0.75)" : "none",
-        px: "40px",
+        bgcolor: "#fff",
+        boxShadow: "0px 1px 5px 0px rgba(0,0,0,0.75)",
+        px: "20px",
       }}
     >
-      <Toolbar disableGutters>
+      <Toolbar sx={{ height: "100%" }} disableGutters>
         <Stack
           width="100%"
+          height="100%"
           direction="row"
           justifyContent="space-between"
           alignItems="center"
         >
-          <Logo scrollPosition={scrollPosition} />
+          <Logo />
 
-          <Stack sx={{ display: { xs: "flex", md: "none" } }}>
-            <Drawer scrollPosition={scrollPosition} />
+          <Stack sx={{ display: { xs: "flex", md: "none" } }} ml={2}>
+            <Drawer />
           </Stack>
 
           <Stack
             direction="row"
             gap={2}
             sx={{ display: { xs: "none", md: "flex" } }}
+            ml={2}
           >
             {pages.map((page) => (
               <Link href={page.url} key={page.name}>
                 <Typography
                   component="p"
                   variant="h4"
-                  color={scrollPosition > 150 ? "common.black" : "common.white"}
+                  color="common.black"
                   fontWeight="normal"
                   fontSize={{ md: "1rem", lg: "1.25rem" }}
                   sx={{
                     cursor: "pointer",
                     borderBottom:
                       pathname === page.url ? "2px solid transparent" : "none",
-                    borderColor:
-                      scrollPosition > 150 ? "common.black" : "common.white",
+                    borderColor: "common.black",
                   }}
                 >
                   {page.name}

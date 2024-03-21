@@ -51,15 +51,15 @@ const themeOptions: ThemeOptions = {
     },
     background: {
       default: "#f7f5f5",
-      paper: "#DFE0E1",
+      paper: "#ffffff",
     },
     primary: {
       main: "#2874c9",
       dark: "#165294",
     },
     secondary: {
-      main: "#faaab8",
-      dark: "#d46e7f",
+      main: "#3f8be0",
+      dark: "#295c94",
     },
     error: {
       main: "#AD2323",

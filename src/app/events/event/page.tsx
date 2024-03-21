@@ -12,6 +12,7 @@ import {
 import { getQuerySingleEvent } from "@/services/Events/apiEventsGetQueries";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import EventBusyIcon from "@mui/icons-material/EventBusy";
+import Link from "next/link";
 
 const EventPage = () => {
   const [eventData, setEventData] = useState<Event>();
@@ -31,20 +32,7 @@ const EventPage = () => {
   }, []);
 
   return (
-    <Stack>
-      <Stack
-        width="100vw"
-        height="50vh"
-        justifyContent="center"
-        alignItems="center"
-        sx={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(https://www.visitpetrich.com/img/2024/01//25/b53ce5c823a264702d788a9609f75908_jpg0_418111658_855148296619333_7445485058657356922_n.jpg)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></Stack>
-
+    <Stack minHeight="100vh">
       <Stack
         width="100%"
         maxWidth="1200px"
@@ -58,6 +46,16 @@ const EventPage = () => {
             <CircularProgress size="10rem" />
           </Stack>
         ) : null}
+
+        <Typography
+          component="h2"
+          variant="h2"
+          mt={2}
+          mb={4}
+          textAlign="center"
+        >
+          {eventData?.title}
+        </Typography>
 
         <Stack
           direction="row"
@@ -140,15 +138,19 @@ const EventPage = () => {
                 gap={2}
               >
                 <LinkIcon />
-                <Typography variant="body1">{eventData.link}</Typography>
+                <Typography variant="body1">
+                  <Link
+                    href={eventData.link}
+                    target="_blank"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Отвори
+                  </Link>
+                </Typography>
               </Stack>
             ) : null}
           </Stack>
         </Stack>
-
-        <Typography component="h2" variant="h2" mt={2} mb={4}>
-          {eventData?.title}
-        </Typography>
 
         <Typography component="p" variant="body1">
           {eventData?.description}

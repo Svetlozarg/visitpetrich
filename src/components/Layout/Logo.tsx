@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface LogoProps {
-  scrollPosition: number;
-}
-
-const Logo: React.FC<LogoProps> = ({ scrollPosition }) => {
+const Logo = () => {
   return (
     <Link href="/">
       <Image
@@ -15,7 +11,7 @@ const Logo: React.FC<LogoProps> = ({ scrollPosition }) => {
         height={70}
         style={{
           width: "100%",
-          maxWidth: scrollPosition > 150 ? "200px" : "300px",
+          maxWidth: "250px",
           height: "auto",
           objectFit: "cover",
           transition: "250ms ease-in-out",

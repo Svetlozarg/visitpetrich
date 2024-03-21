@@ -127,7 +127,10 @@ const Footer = () => {
         bgcolor="common.black"
       >
         <Typography component="p" variant="body1" color="common.white">
-          © 2024 VisitPetrich. All Rights Reserved
+          © 2024 VisitPetrich. All Rights Reserved | Created by{" "}
+          <Typography component="span" variant="h5" color="primary.main">
+            Сиско Груп
+          </Typography>
         </Typography>
       </Stack>
     </Stack>

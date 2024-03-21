@@ -1,4 +1,15 @@
 export type PostQueryCreateEventInput = {
+  category:
+    | "exhibitions"
+    | "conferences"
+    | "seminars"
+    | "festivals"
+    | "celebration event"
+    | "fundraisers"
+    | "sports"
+    | "art event"
+    | "virtual events"
+    | "workshops";
   title: string;
   description: string;
   startDate: Date;
@@ -10,6 +21,17 @@ export type PostQueryCreateEventInput = {
 };
 
 export type PostQueryUpdateEventInput = {
+  category:
+    | "exhibitions"
+    | "conferences"
+    | "seminars"
+    | "festivals"
+    | "celebration event"
+    | "fundraisers"
+    | "sports"
+    | "art event"
+    | "virtual events"
+    | "workshops";
   title: string;
   description: string;
   startDate: Date;

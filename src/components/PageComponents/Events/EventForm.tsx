@@ -2,6 +2,7 @@ import { ModalType } from "@/app/admin/dashboard/events/page";
 import Alert, { AlertStatuses } from "@/components/MUIComponents/Alert";
 import Button from "@/components/MUIComponents/Button";
 import DateAndTimePicker from "@/components/MUIComponents/DateAndTimePicker";
+import Select from "@/components/MUIComponents/Select";
 import TextField from "@/components/MUIComponents/TextField";
 import {
   postQueryCreateEvent,
@@ -18,7 +19,21 @@ import { Form, Formik } from "formik";
 import { useState } from "react";
 import { date, object, string } from "yup";
 
+const CATEGORY_SELECT_VALUES = [
+  { label: "Изложби", value: "exhibitions" },
+  { label: "Конференции", value: "conferences" },
+  { label: "Семинари", value: "seminars" },
+  { label: "Фестивали", value: "festivals" },
+  { label: "Тържествени събития", value: "celebration event" },
+  { label: "Благотворителни събития", value: "fundraisers" },
+  { label: "Спортни събития", value: "sports" },
+  { label: "Арт събития", value: "art event" },
+  { label: "Виртуални събития", value: "virtual events" },
+  { label: "Работилници", value: "workshops" },
+];
+
 const fieldValidation = object({
+  category: string().required("Полето е задължително"),
   title: string().required("Полето е задължително"),
   description: string().required("Полето е задължително"),
   startDate: date().required("Полето е задължително"),
@@ -33,6 +48,17 @@ const fieldValidation = object({
 });
 
 type EventFormValues = {
+  category:
+    | "exhibitions"
+    | "conferences"
+    | "seminars"
+    | "festivals"
+    | "celebration event"
+    | "fundraisers"
+    | "sports"
+    | "art event"
+    | "virtual events"
+    | "workshops";
   title: string;
   description: string;
   startDate: Date;
@@ -60,6 +86,7 @@ const EventForm: React.FC<EventFormProps> = ({
   const [formStatus, setFormStatus] = useState<AlertStatuses>(null);
   const [alertMessage, setAlertMessage] = useState<string | null>(null);
   const initialValues: EventFormValues = {
+    category: "exhibitions",
     title: modalData?.title || "",
     description: modalData?.description || "",
     startDate: modalData?.startDate || new Date(),
@@ -77,6 +104,7 @@ const EventForm: React.FC<EventFormProps> = ({
       setAlertMessage(null);
 
       const body = {
+        category: values.category,
         title: values.title,
         description: values.description,
         startDate: values.startDate,
@@ -154,6 +182,16 @@ const EventForm: React.FC<EventFormProps> = ({
               autoComplete="false"
             >
               <Stack spacing={3} mt={3}>
+                <Select
+                  name="category"
+                  label="Категория*"
+                  selectValues={CATEGORY_SELECT_VALUES}
+                  value={values.category}
+                  helperText={touched["category"] && errors["category"]}
+                  error={touched["category"] && !!errors["category"]}
+                  onChange={handleChange}
+                />
+
                 <TextField
                   name="title"
                   label="Заглавие*"
@@ -175,25 +213,33 @@ const EventForm: React.FC<EventFormProps> = ({
                   multiline
                 />
 
-                <DateAndTimePicker
-                  name="startDate"
-                  label="Начална дата"
-                  onChange={(e) => (values.startDate = e as Date)}
-                  error={touched["startDate"] && !!errors["startDate"]}
-                  helperText={touched["startDate"] && errors["startDate"]}
-                  value={values.startDate}
-                  type="datetime"
-                />
+                <Stack
+                  direction="row"
+                  gap={1}
+                  justifyContent="space-between"
+                  alignItems="center"
+                  flexWrap="wrap"
+                >
+                  <DateAndTimePicker
+                    name="startDate"
+                    label="Начална дата*"
+                    onChange={(e) => (values.startDate = e as Date)}
+                    error={touched["startDate"] && !!errors["startDate"]}
+                    helperText={touched["startDate"] && errors["startDate"]}
+                    value={values.startDate}
+                    type="datetime"
+                  />
 
-                <DateAndTimePicker
-                  name="endDate"
-                  label="Крайна дата"
-                  onChange={(e) => (values.endDate = e as Date)}
-                  error={touched["endDate"] && !!errors["endDate"]}
-                  helperText={touched["endDate"] && errors["endDate"]}
-                  value={values.endDate}
-                  type="datetime"
-                />
+                  <DateAndTimePicker
+                    name="endDate"
+                    label="Крайна дата*"
+                    onChange={(e) => (values.endDate = e as Date)}
+                    error={touched["endDate"] && !!errors["endDate"]}
+                    helperText={touched["endDate"] && errors["endDate"]}
+                    value={values.endDate}
+                    type="datetime"
+                  />
+                </Stack>
 
                 <TextField
                   name="location"

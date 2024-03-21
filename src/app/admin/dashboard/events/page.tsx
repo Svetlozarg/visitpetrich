@@ -1,12 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import {
-  Avatar,
   CircularProgress,
   IconButton,
   List,
   ListItem,
-  ListItemAvatar,
   ListItemText,
   Stack,
   Typography,
@@ -92,7 +90,30 @@ const EventsPage = () => {
               <ListItem
                 key={event._id}
                 secondaryAction={
-                  <Stack direction="row" gap={2}>
+                  <Stack
+                    direction="row"
+                    justifyContent="flex-end"
+                    alignItems="center"
+                    gap={2}
+                  >
+                    <Typography
+                      display={{ xs: "none", sm: "none", md: "block" }}
+                    >
+                      {event.category === "exhibitions" && "Изложби"}
+                      {event.category === "conferences" && "Конференции"}
+                      {event.category === "seminars" && "Семинари"}
+                      {event.category === "festivals" && "Фестивали"}
+                      {event.category === "celebration event" &&
+                        "Тържествени събития"}
+                      {event.category === "fundraisers" &&
+                        "Благотворителни събития"}
+                      {event.category === "sports" && "Спортни събития"}
+                      {event.category === "art event" && "Арт събития"}
+                      {event.category === "virtual events" &&
+                        "Виртуални събития"}
+                      {event.category === "workshops" && "Работилници"}
+                    </Typography>
+
                     <IconButton
                       edge="end"
                       onClick={() =>
@@ -125,9 +146,6 @@ const EventsPage = () => {
                   </Stack>
                 }
               >
-                <ListItemAvatar>
-                  <Avatar />
-                </ListItemAvatar>
                 <ListItemText
                   primary={event.title}
                   secondary={

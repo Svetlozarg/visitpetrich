@@ -6,7 +6,7 @@ const HomeHero = () => {
   return (
     <Stack
       width="100vw"
-      height="80vh"
+      height="calc(100vh - 120px)"
       sx={{
         background:
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-hero_iXeuCf7XI.jpg?updatedAt=1708161070606')",
@@ -23,10 +23,20 @@ const HomeHero = () => {
         sx={{ color: "white" }}
         gap={4}
       >
-        <Typography component="h1" variant="h1" letterSpacing="6px">
+        <Typography
+          component="h1"
+          variant="h1"
+          letterSpacing="6px"
+          textAlign="center"
+        >
           Туризъм в Петрич
         </Typography>
-        <Typography component="h2" variant="h3" letterSpacing="2px">
+        <Typography
+          component="h2"
+          variant="h3"
+          letterSpacing="2px"
+          textAlign="center"
+        >
           Изживяване отвъд очакването
         </Typography>
 
