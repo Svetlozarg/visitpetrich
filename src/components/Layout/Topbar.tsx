@@ -60,6 +60,11 @@ export const pages: Page[] = [
     url: "/events",
     icon: <ArticleIcon sx={{ color: "primary.main" }} />,
   },
+  {
+    name: "ScanSight",
+    url: "https://scansight.net",
+    icon: <ArticleIcon sx={{ color: "primary.main" }} />,
+  },
 ];
 
 function Topbar() {
@@ -95,24 +100,43 @@ function Topbar() {
             gap={2}
             sx={{ display: { xs: "none", md: "flex" } }}
             ml={2}
+            justifyContent="center"
+            alignContent="center"
           >
             {pages.map((page) => (
               <Link href={page.url} key={page.name}>
-                <Typography
-                  component="p"
-                  variant="h4"
-                  color="common.black"
-                  fontWeight="normal"
-                  fontSize={{ md: "1rem", lg: "1.25rem" }}
-                  sx={{
-                    cursor: "pointer",
-                    borderBottom:
-                      pathname === page.url ? "2px solid transparent" : "none",
-                    borderColor: "common.black",
-                  }}
-                >
-                  {page.name}
-                </Typography>
+                {page.name !== "ScanSight" ? (
+                  <Typography
+                    component="p"
+                    variant="h4"
+                    color="common.black"
+                    fontWeight="normal"
+                    fontSize={{ md: "1rem", lg: "1.25rem" }}
+                    py={1}
+                    sx={{
+                      cursor: "pointer",
+                      borderBottom:
+                        pathname === page.url
+                          ? "2px solid transparent"
+                          : "none",
+                      borderColor: "common.black",
+                    }}
+                  >
+                    {page.name}
+                  </Typography>
+                ) : (
+                  <Typography
+                    component="p"
+                    variant="h4"
+                    fontSize={{ md: "1rem", lg: "1.25rem" }}
+                    color="common.white"
+                    bgcolor="#14AE5C"
+                    p={1}
+                    borderRadius="10px"
+                  >
+                    {page.name}
+                  </Typography>
+                )}
               </Link>
             ))}
           </Stack>

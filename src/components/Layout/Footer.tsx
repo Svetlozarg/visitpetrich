@@ -126,7 +126,12 @@ const Footer = () => {
         alignItems="center"
         bgcolor="common.black"
       >
-        <Typography component="p" variant="body1" color="common.white">
+        <Typography
+          component="p"
+          variant="body1"
+          color="common.white"
+          textAlign="center"
+        >
           © 2024 VisitPetrich. All Rights Reserved | Created by{" "}
           <Typography component="span" variant="h5" color="primary.main">
             Сиско Груп
