@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Box width="100%" maxWidth={{ xs: "150px", sm: "150px", md: "200px" }}>
+    <Box width="100%" maxWidth={{ xs: "100px", sm: "100px", md: "150px" }}>
       <Link href="/">
         <Image
           src="https://ik.imagekit.io/obelussoft/VisitPetrich/visitpetrich-logo_fXv09QIPW.png"

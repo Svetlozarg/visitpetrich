@@ -69,11 +69,11 @@ function Topbar() {
     <AppBar
       position="relative"
       sx={{
-        height: "120px",
+        height: { xs: "70px", sm: "90px", md: "90px" },
         transition: "250ms ease-in-out",
         bgcolor: "#fff",
         boxShadow: "0px 1px 5px 0px rgba(0,0,0,0.75)",
-        px: "20px",
+        px: { xs: "0", sm: "20px", md: "20px" },
       }}
     >
       <Toolbar sx={{ height: "100%" }} disableGutters>

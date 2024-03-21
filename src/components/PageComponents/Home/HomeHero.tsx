@@ -6,7 +6,7 @@ const HomeHero = () => {
   return (
     <Stack
       width="100vw"
-      height="calc(100vh - 120px)"
+      height="calc(100vh - 90px)"
       sx={{
         background:
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-hero_iXeuCf7XI.jpg?updatedAt=1708161070606')",
