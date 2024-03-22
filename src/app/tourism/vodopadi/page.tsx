@@ -177,7 +177,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              Лешников водопад
+              Лешнишки водопад
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
