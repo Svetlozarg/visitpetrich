@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Box width="100%" maxWidth={{ xs: "100px", sm: "100px", md: "150px" }}>
+    <Box width="100%" maxWidth={{ xs: "150px", sm: "150px", md: "180px" }}>
       <Link href="/">
         <Image
-          src="https://ik.imagekit.io/obelussoft/VisitPetrich/visitpetrich-logo_fXv09QIPW.png"
+          src="https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-logo-bg_ujgzRJcLS.png"
           alt="VisitPetrich Logo"
           width={250}
           height={70}
