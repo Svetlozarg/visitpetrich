@@ -1,7 +1,11 @@
 "use client";
 import PageHeader from "@/components/SmallComponents/PageHeader";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import image2 from "../../../../public/assets/sport/walkPath.jpg";
+import image4 from "../../../../public/assets/sport/bike.webp";
+import image5 from "../../../../public/assets/sport/image1.jpg";
+import image6 from "../../../../public/assets/sport/image2.jpg";
 
 const page = () => {
   return (
@@ -10,6 +14,240 @@ const page = () => {
         title="Планински туризъм"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%AF%D0%B2%D0%BE%D1%80%D0%BD%D0%B8%D1%88%D0%BA%D0%B8%20%D0%B2%D0%BE%D0%B4%D0%BE%D0%BF%D0%B0%D0%B4_vVAZxnJWq.jpg?updatedAt=1709650019042"
       />
+
+      <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
+          gap={4}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage: `url('${image4.src}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              borderRadius: "10px",
+            }}
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
+            <Typography component="h4" variant="h3">
+              Велосипедни маршрути
+            </Typography>
+
+            <ul>
+              <li>
+                Петрич – бивша застава „Папреница“ – подбилен път – х. Конгур –
+                Петрич (38,5 км)
+              </li>
+              <li>
+                Петрич – заслон „Гюлова поляна“ – х.Конгур – м. Мравките –
+                Петрич (30 км)
+              </li>
+              <li>
+                Велообиколка на Природен Парк Беласица: с.Самуилово – Петрич –
+                х.Конгур – подбилен път – м.Щаба – с.Скрът – с.Самуилово (77,7
+                км)
+              </li>
+              <li>
+                с. Габрене – Пишана скала/ водохващане Мини-ВЕЦ Габрене –
+                с.Габрене (3,4 км)
+              </li>
+              <li>
+                с.Ключ – Самуилова крепост – с.Яворница – с.Ключ (13,3 км)
+              </li>
+              <li>с.Ключ – ловна хижа на с.Ключ – с.Ключ (12,3 км)</li>
+              <li>с.Ключ – м. Марката – с.Ключ (4,5 км)</li>
+              <li>
+                с.Коларово – с.Беласица – римски път – с.Коларово (10,4 км)
+              </li>
+              <li>
+                с.Самуилово – Петрич – х.Конгур – подбилен път – м.Лопово –
+                с.Самуилово (57,4 км)
+              </li>
+              <li>
+                с.Самуилово – м.Лопово – подбилен път – м.Щаба – с.Скрът –
+                с.Самуилово (52,4 км)
+              </li>
+              <li>
+                с.Самуилово – м.Лопово – подбилен път – с.Ключ – с.Самуилово (52
+                км)
+              </li>
+              <li>
+                с.Скрът – м.Щаба – подбилен път – с.Ключ – с.Скрът (34 км)
+              </li>
+              <li>
+                Европейски велосипеден маршрут „Пътят на Желязната завеса”
+                (EuroVelo 13) – участък ГКПП Златарево-с.Марино поле (41 км)
+              </li>
+            </ul>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
+          gap={4}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage: `url('${image2.src}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              borderRadius: "10px",
+            }}
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
+            <Typography component="h4" variant="h3">
+              Планински Маршрути
+            </Typography>
+
+            <ul>
+              <li>
+                Петрич (стадиона) – хижа Беласица – хижа Конгур – връх Конгур (5
+                часа)
+              </li>
+              <li>Петрич – хижа Беласица (1 час 30 мин)</li>
+              <li>
+                Петрич – хижа Беласица – Лешнишки водопад – с. Беласица (5 часа)
+              </li>
+              <li>хижа Беласица – хижа Конгур (1 час 30 мин)</li>
+              <li>
+                Петрич (Младежки дом) – местност Папреница – местност Божкиното
+                – местност Лопатара – връх Конгур (5 часа)
+              </li>
+              <li>хижа Конгур – връх Конгур – връх Радомир (5 часа)</li>
+              <li>
+                хижа Конгур – връх Конгур – връх Радомир – проход Железни врата
+                – връх Тумба (10 часа)
+              </li>
+              <li>село Коларово – местност Лопово – връх Радомир (7 часа)</li>
+              <li>
+                село Самуилово – местност Лопово (по пътя) – връх Радомир (8
+                часа)
+              </li>
+              <li>
+                село Самуилово – местност Лопово (пътека) – връх Радомир (7
+                часа)
+              </li>
+              <li>село Ключ – връх Тумба (8 часа)</li>
+              <li>село Скрът – връх Тумба (7 часа)</li>
+              <li>село Габрене – връх Тумба (6 часа)</li>
+              <li>село Камена – Камешнишките водопади- село Камена (8 часа)</li>
+            </ul>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
+          gap={4}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage: `url('${image5.src}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              borderRadius: "10px",
+            }}
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
+            <Typography component="h4" variant="h3">
+              Кратки туристически маршрути
+            </Typography>
+
+            <ul>
+              <li>село Беласица – Лешнишки водопад – село Беласица</li>
+              <li>
+                село Коларово – езерото Гьолчето (единственото естествено езеро
+                в планината) – село Коларово
+              </li>
+              <li>село Коларово – Коларовски водопади – село Коларово</li>
+              <li>село Самуилово – местността Бялата чешма – село Самуилово</li>
+              <li>
+                село Камена – Камешнишки водопад (Срамежливеца) – село Камена
+              </li>
+              <li>село Яворница – Яворнишки водопад – село Яворница</li>
+              <li>село Яворница – местност Милянова – село Яворница</li>
+              <li>село Ключ – водопад Мангъра – село Ключ</li>
+              <li>село Ключ – местността Гергевче – село Ключ</li>
+              <li>село Ключ – водопадите – село Ключ</li>
+              <li>село Ключ – НПМ „Самуилова крепост” – село Ключ</li>
+              <li>село Ключ – местността Вадиоч в с. Скрът – село Ключ</li>
+              <li>село Скрът – водопад Мангъра – село Скрът</li>
+              <li>село Скрът – водопад Дъбицата – село Скрът</li>
+              <li>село Габрене – местност Пишена скала – село Габрене</li>
+            </ul>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="flex-start"
+          flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
+          gap={4}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "500px",
+              backgroundImage: `url('${image6.src}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              borderRadius: "10px",
+            }}
+          ></Box>
+
+          <Stack width="100%" maxWidth={{ md: "800px" }} gap={2}>
+            <Typography component="h4" variant="h3">
+              Тематични туристически маршрути
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Тематични туристически маршрути изградени на територията на ПП
+              „Беласица“ стигат до интересни местности и водопади, намиращи се в
+              близост до селата, разположени в подножието на планината. Всеки
+              тематичен маршрут предлага информация по определена тема, което
+              прави разходката из планината още по-вълнуваща и приятна.
+            </Typography>
+
+            <ul>
+              <li>„Пеперудите и цветята на Беласица“</li>
+              <li>„Живота на кестена“</li>
+              <li>„Пътеката на мравката“</li>
+              <li>„Приятели“</li>
+              <li>„Тайните на водата“</li>
+              <li>„Пътуване в историята“</li>
+              <li>„Цветна приказка“</li>
+              <li>„Кълвачите – пазители на горите“</li>
+              <li>„Път на Самуиловите воини”</li>
+            </ul>
+          </Stack>
+        </Stack>
+      </Stack>
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
         <Stack

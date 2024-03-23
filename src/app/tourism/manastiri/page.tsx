@@ -2,13 +2,14 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import panteleimon from "../../../../public/assets/tourism/manastiri/panteleimon.jpg";
 
 const page = () => {
   return (
     <Stack>
       <PageHeader
         title="Поклоннически туризъм"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8%20%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%D0%BC%D0%BE%D0%BD_8ML8Qvs2Xn.jpg?updatedAt=1709649405139"
+        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A7%D1%83%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%20%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%20_%D0%A1%D0%B2%D0%B5%D1%82%D0%B8%20%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8__gFqkY-Dv8.jpg?updatedAt=1709649403081"
       />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
@@ -19,7 +20,59 @@ const page = () => {
           gap={4}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8%20%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%D0%BC%D0%BE%D0%BD_8ML8Qvs2Xn.jpg?updatedAt=1709649405139"
+            src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A7%D1%83%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%20%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%20_%D0%A1%D0%B2%D0%B5%D1%82%D0%B8%20%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8__gFqkY-Dv8.jpg?updatedAt=1709649403081"
+            alt="Park Petrich"
+            width={100}
+            height={100}
+            style={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "600px",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+          />
+          <Stack gap={2}>
+            <Typography component="h4" variant="h3">
+              Чуриловски манастир “Свети Георги”
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              Чуриловският манастир „Свети Георги“ е разположен в южните
+              склонове на планината Огражден в землището на село Чурилово. Той
+              се намира на 28 km от Петрич и на 2 km от село Гега. Наричан е още
+              Игуменски, Геговски или Манастира с дяволите. Според старо
+              предание, строителството на манастира е започнало през 1848
+              година. В него първоначално е разкрито обществено килийно училище,
+              което по-късно е преустроено в новобългарско. Съществуват и
+              предположения, че манастирът води началото си още от XIV в. А в
+              днешния си вид е изграден в средата на XIX в. Съхранен е ферман за
+              „разширяването и построяването“ на църквата „Свети Георги“,
+              издаден на 5 март 1857 година от султан Абдул Меджид. За
+              съграждането на манастира се черпят сведения и от съществуващите
+              строителни надписи. В два от тях се посочва, че на 10 март 1858 г.
+              е станало обновяването на църквата, а в третия – че през 1890 г. е
+              построена камбанарията. Текстовете сочат, че на мястото на на
+              църквата е съществувал по-стар храм.
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              Чурилово
+            </Typography>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction={{ md: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="flex-start"
+          gap={4}
+        >
+          <Image
+            src={panteleimon}
             alt="Park Petrich"
             width={100}
             height={100}
@@ -80,7 +133,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              Успение Богородично“
+              Църква “Успение Богородично“
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
@@ -107,6 +160,13 @@ const page = () => {
               Впоследствие храмът е основно обновен и днес с целия си блясък
               отново приема поклоници.
             </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              Център, ул. Св.Кирил и Методий, 2850 Петрич, България
+            </Typography>
           </Stack>
         </Stack>
 
@@ -131,7 +191,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              “Свети Николай”
+              Църква “Свети Николай”
             </Typography>
             <Typography component="p" variant="body1" textAlign="justify">
               „Свети Николай“ или „Свети Никола“ е възрожденска църква в
@@ -152,6 +212,13 @@ const page = () => {
               иконата „Св.св. Кирил и Методий“ (1883). Една от иконите е дело на
               Андон Зограф (1898). На 21 септември 1995 година църквата
               пострадва от пожар, след който е основно ремонтирана.
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              Център, ул. „Екзарх Йосиф“ 30, 2850 Петрич, България
             </Typography>
           </Stack>
         </Stack>
@@ -177,7 +244,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              “Свети Георги”
+              Църква “Свети Георги”
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
@@ -191,6 +258,13 @@ const page = () => {
               двери и Светите мощи не Йаков Костурски. Днес до църквата „Св.
               Георги” има нова просторна сграда, в която се помещава неделно
               училище.
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              Център, ул. „Свети Георги“, 2850 Петрич, България
             </Typography>
           </Stack>
         </Stack>
@@ -216,7 +290,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              “Свети Илия”
+              Църква “Свети Илия”
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
@@ -232,6 +306,13 @@ const page = () => {
               два реда от по три колони, които поддържат дървената покривна
               конструкция. Таваните над страничните кораби са равни, а средният
               е засводен.
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              с. Беласица
             </Typography>
           </Stack>
         </Stack>
@@ -273,6 +354,13 @@ const page = () => {
               Неделима част от манастирския ансамбъл е и вековното дърво в
               двора, което привлича вниманието на посетителите с величествената
               си снага, извисяваща се над целия комплекс.
+            </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              2850 Петрич, България
             </Typography>
           </Stack>
         </Stack>
@@ -324,6 +412,13 @@ const page = () => {
               ден от 8:00-19:00 часа Телефони за връзка: 0887 667 670; 0887 667
               678
             </Typography>
+
+            <Typography component="p" variant="body1" textAlign="justify">
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              3 км. от с. Рупите
+            </Typography>
           </Stack>
         </Stack>
 
@@ -348,7 +443,7 @@ const page = () => {
           />
           <Stack gap={2}>
             <Typography component="h4" variant="h3">
-              “Свети пророк Илия”
+              Църква “Свети пророк Илия”
             </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
@@ -373,50 +468,12 @@ const page = () => {
               Петрич реставрира повредената от времето живописна украса на храма
               Заради името на черквата Илинден е празник на селото.
             </Typography>
-          </Stack>
-        </Stack>
-
-        <Stack
-          direction={{ md: "column", lg: "row" }}
-          justifyContent="center"
-          alignItems="flex-start"
-          gap={4}
-        >
-          <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A7%D1%83%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%20%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%20_%D0%A1%D0%B2%D0%B5%D1%82%D0%B8%20%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8__gFqkY-Dv8.jpg?updatedAt=1709649403081"
-            alt="Park Petrich"
-            width={100}
-            height={100}
-            style={{
-              width: "100%",
-              maxWidth: "800px",
-              height: "600px",
-              objectFit: "cover",
-              borderRadius: "10px",
-            }}
-          />
-          <Stack gap={2}>
-            <Typography component="h4" variant="h3">
-              Чуриловски манастир “Свети Георги”
-            </Typography>
 
             <Typography component="p" variant="body1" textAlign="justify">
-              Чуриловският манастир „Свети Георги“ е разположен в южните
-              склонове на планината Огражден в землището на село Чурилово. Той
-              се намира на 28 km от Петрич и на 2 km от село Гега. Наричан е още
-              Игуменски, Геговски или Манастира с дяволите. Според старо
-              предание, строителството на манастира е започнало през 1848
-              година. В него първоначално е разкрито обществено килийно училище,
-              което по-късно е преустроено в новобългарско. Съществуват и
-              предположения, че манастирът води началото си още от XIV в. А в
-              днешния си вид е изграден в средата на XIX в. Съхранен е ферман за
-              „разширяването и построяването“ на църквата „Свети Георги“,
-              издаден на 5 март 1857 година от султан Абдул Меджид. За
-              съграждането на манастира се черпят сведения и от съществуващите
-              строителни надписи. В два от тях се посочва, че на 10 март 1858 г.
-              е станало обновяването на църквата, а в третия – че през 1890 г. е
-              построена камбанарията. Текстовете сочат, че на мястото на на
-              църквата е съществувал по-стар храм.
+              <Typography component="span" variant="body1" fontWeight="bold">
+                Локация:{" "}
+              </Typography>
+              регион Подгорие
             </Typography>
           </Stack>
         </Stack>

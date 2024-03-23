@@ -2,6 +2,9 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import image2 from "../../../../public/assets/tourism/sintica.jpg";
+import image3 from "../../../../public/assets/tourism/samuil.jpg";
+import image4 from "../../../../public/assets/tourism/houseVanga.jpg";
 
 const page = () => {
   return (
@@ -10,6 +13,151 @@ const page = () => {
         title="Културно-исторически туризъм"
         image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%B7%D0%B0%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B0_riM7gUYCm.jpg?updatedAt=1709645720133"
       />
+
+      <Stack>
+        <Stack
+          direction={{ md: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="flex-start"
+          gap={4}
+          p={{ xs: 2, sm: 2, md: 10 }}
+        >
+          <Image
+            src={image2}
+            alt="Heraclea Sintica"
+            width={100}
+            height={100}
+            style={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "450px",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+          />
+          <Stack width="100%" maxWidth="700px" gap={2}>
+            <Typography component="h4" variant="h3">
+              Античен град Хераклея Синтика
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Повече от век учените спорят къде точно е тайнствения град, за
+              който още Омир пише – града на хераклейците…Случайно заловен
+              надпис през 2002г. разкрива неподозирана тайна – античния град
+              Хераклея Синтика стои застинал край Рупите. Траки, македони, елини
+              и римляни са оставили своя отпечатък върху значимата и драматична
+              история на античен полис.
+            </Typography>
+            <Typography component="p" variant="body1">
+              Основан в средата на IVв.пр.Хр., градът е просъществувал близо
+              десет века.Разрушен от две последователни мощни земетресения в
+              края на IVв. и началото на Vв.През своето съществуване Хераклея
+              Синтика е имал съществена роля в римската провинция Македония.
+            </Typography>
+            <Typography component="p" variant="body1">
+              Археологическите проучвания продължават и в момента и нови и
+              неподозирани открития излизат пред очите на посетителите. Системни
+              археологически проучвания се провеждат от 2007г., а очакванията на
+              учените са, че най-интересното тепърва предстои…
+            </Typography>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction={{ md: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="flex-start"
+          gap={4}
+          p={{ xs: 2, sm: 2, md: 10 }}
+        >
+          <Image
+            src={image3}
+            alt="Samuil Fortress"
+            width={100}
+            height={100}
+            style={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "450px",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+          />
+          <Stack width="100%" maxWidth="700px" gap={2}>
+            <Typography component="h4" variant="h3">
+              Самуилова Крепост
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Самуилова крепост е исторически обект, издигнал се в X век в
+              близост до Петрич, във важен период от българската история.
+              Построена по време на управлението на българския цар Самуил,
+              крепостта е била не само стратегическо укрепено място, но и символ
+              на силата и величието на българското владичество. Крепостта е
+              осигурявала изключителни възможности за наблюдение и защита, което
+              я прави ключова точка в средновековната българска история.
+            </Typography>
+            <Typography component="p" variant="body1">
+              Стените и кулите на Самуилова крепост, запазени до днес, са
+              впечатляващ пример за средновековна военна архитектура.
+              Посетителите могат да се насладят на прекрасни гледки към
+              околностите и да разгледат археологически открития, свързани с
+              живота и историята на крепостта. Тя е не само атракция за туристи,
+              но и важен източник на знание за българското наследство и култура.
+            </Typography>
+          </Stack>
+        </Stack>
+
+        <Stack
+          direction={{ md: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="flex-start"
+          gap={4}
+          p={{ xs: 2, sm: 2, md: 10 }}
+        >
+          <Image
+            src={image4}
+            alt="Hose of Vanga"
+            width={100}
+            height={100}
+            style={{
+              width: "100%",
+              maxWidth: "800px",
+              height: "450px",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+          />
+          <Stack width="100%" maxWidth="700px" gap={2}>
+            <Typography component="h4" variant="h3">
+              Къща Ванга
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Къщата на Ванга представлява историческа забележителност в град
+              Петрич, която е домът на известната българска ясновидка и
+              целителка Ванга. Тя е привлекла вниманието на хиляди хора от цял
+              свят, които се интересуват от мистериите на човешкия ум и
+              възможностите за предвиждане на бъдещи събития.
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Къщата представлява типичен български дом от 19-ти век и е
+              превърната в музей, където посетителите могат да видят предмети и
+              артефакти от живота и дейността на Ванга. В музея се съхраняват
+              различни предмети, свързани с нейната работа като книги, снимки и
+              лични вещи.
+            </Typography>
+
+            <Typography component="p" variant="body1">
+              Посещението на Къщата на Ванга е възможност да се запознаете
+              по-добре с историята и легендите, свързани с тази изключителна
+              личност, както и да разгадаете тайните на нейните предсказания и
+              уникални способности.
+            </Typography>
+          </Stack>
+        </Stack>
+      </Stack>
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
         <Stack

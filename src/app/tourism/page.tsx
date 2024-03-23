@@ -155,7 +155,7 @@ const TourismPage = () => {
           />
           <Stack width="100%" maxWidth="700px" gap={2}>
             <Typography component="h4" variant="h3">
-              Античен град хераклея синтик
+              Античен град Хераклея Синтика
             </Typography>
 
             <Typography component="p" variant="body1">

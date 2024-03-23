@@ -8,7 +8,7 @@ import culture from "../../../../public/assets/tourism/typesTurism/culture.jpg";
 import panteleimon from "../../../../public/assets/tourism/typesTurism/panteleimon.jpg";
 import typesTourism from "../../../../public/assets/tourism/typesTurism/typesTourism.webp";
 import vodopad from "../../../../public/assets/tourism/typesTurism/vodopad.jpg";
-import wine from "../../../../public/assets/tourism/typesTurism/wine.jpg";
+import wine from "../../../../public/assets/tourism/wine/vilaMelnik.jpg";
 
 const SightSeeingsData = [
   {

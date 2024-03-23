@@ -2,14 +2,13 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import wine from "../../../../public/assets/tourism/wine/vilaMelnik.jpg";
+import Link from "next/link";
 
 const page = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Винен туризъм"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%BE%D1%80%D0%B1%D0%B5%D0%BB%D1%83%D1%81_paqcVszNq.jpg?updatedAt=1709646866688"
-      />
+      <PageHeader title="Винен туризъм" image={wine} />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
         <Stack
@@ -74,6 +73,10 @@ const page = () => {
               тероара на четирите селища, до които се намират масивите на избата
               и вината Orbelus. Ще имате възможност да опитате превъзходно розе
               Orbelus Paril и Orbelus Melnik.
+            </Typography>
+
+            <Typography sx={{ textDecoration: "underline" }}>
+              <Link href="https://www.orbeliawinery.bg/">Уебсайт</Link>
             </Typography>
           </Stack>
         </Stack>
@@ -141,6 +144,10 @@ const page = () => {
               направите преди това резервация, особено, ако сте по-голяма група.
               Можете да го направите на телефон 0884 667793.
             </Typography>
+
+            <Typography sx={{ textDecoration: "underline" }}>
+              <Link href="https://www.orbeliawinery.bg">Уебсайт</Link>
+            </Typography>
           </Stack>
         </Stack>
 
@@ -199,6 +206,10 @@ const page = () => {
             <Typography component="p" variant="body1" textAlign="justify">
               Винарска изба Рупел е отворена за посетители с работно време от
               понеделник до неделя от 10:00 до 17:00 часа.
+            </Typography>
+
+            <Typography sx={{ textDecoration: "underline" }}>
+              <Link href="https://rupel-wine.com/начало/">Уебсайт</Link>
             </Typography>
           </Stack>
         </Stack>
@@ -260,6 +271,10 @@ const page = () => {
             <Typography component="p" variant="body1" textAlign="justify">
               Можете да ги посетите от вторник до неделя в интервала от 10 до
               18ч. За резервации: +359 899 409 464
+            </Typography>
+
+            <Typography sx={{ textDecoration: "underline" }}>
+              <Link href="https://www.zlatenrozhen.bg/">Уебсайт</Link>
             </Typography>
           </Stack>
         </Stack>
