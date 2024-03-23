@@ -1,7 +1,7 @@
 import MainLayout from "@/components/SmallComponents/MainLayout";
 import ThemeRegistry from "@/theme/ThemeRegistry";
 import { Metadata } from "next";
-// test
+
 export const metadata: Metadata = {
   title: {
     default: "Петрич - Изживяване отвъд очакването",

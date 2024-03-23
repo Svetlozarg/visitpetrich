@@ -11,9 +11,7 @@ import img5 from "../../../../public/assets/tourism/sintica/img5.jpg";
 import img6 from "../../../../public/assets/tourism/sintica/img6.jpg";
 import img7 from "../../../../public/assets/tourism/sintica/img7.jpg";
 import img8 from "../../../../public/assets/tourism/sintica/img8.jpg";
-import img9 from "../../../../public/assets/tourism/sintica/img9.jpg";
 import img10 from "../../../../public/assets/tourism/sintica/img10.jpg";
-import img11 from "../../../../public/assets/tourism/sintica/img11.jpg";
 
 const IMAGES_DATA = [
   img2.src,
@@ -23,9 +21,7 @@ const IMAGES_DATA = [
   img6.src,
   img7.src,
   img8.src,
-  img9.src,
   img10.src,
-  img11.src,
 ];
 
 const PetrichMuseumPage = () => {
