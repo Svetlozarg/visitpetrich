@@ -4,12 +4,16 @@ import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import imageHero from "../../../public/assets/tourism/tourismHero.jpg";
+import image1 from "../../../public/assets/tourism/historyMuseum.jpg";
+import image2 from "../../../public/assets/tourism/sintica.jpg";
+import image3 from "../../../public/assets/tourism/samuil.jpg";
+import image4 from "../../../public/assets/tourism/houseVanga.jpg";
 
 const TOURISM_DATA = [
   {
     title: "Забележителности",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg",
+    image: image2.src,
     link: "/tourism/sight-seeing",
   },
   {
@@ -28,7 +32,7 @@ const TourismPage = () => {
       <PageHeader
         title="Туризъм в Петрич"
         subtitle="Изживяване отвъд очакването"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
+        image={imageHero}
       />
 
       <Stack p={{ xs: 2, sm: 2, md: 8 }}>
@@ -83,7 +87,7 @@ const TourismPage = () => {
           p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-museum_7VZpceUwp.jpg?updatedAt=1708164126233"
+            src={image1}
             alt="Petrich Museum"
             width={100}
             height={100}
@@ -137,7 +141,7 @@ const TourismPage = () => {
           p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)_9cul_VCV9.jpg?updatedAt=1708330237287"
+            src={image2}
             alt="Heraclea Sintica"
             width={100}
             height={100}
@@ -191,7 +195,7 @@ const TourismPage = () => {
           p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091"
+            src={image3}
             alt="Samuil Fortress"
             width={100}
             height={100}
@@ -242,7 +246,7 @@ const TourismPage = () => {
           p={{ xs: 2, sm: 2, md: 10 }}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09006_vicgp-nL9.jpg?updatedAt=1708330148550"
+            src={image4}
             alt="Hose of Vanga"
             width={100}
             height={100}

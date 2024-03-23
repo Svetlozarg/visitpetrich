@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import image from "../../../../public/assets/home/беласица-планина.jpg";
+import image from "../../../../public/assets/home/sintica.jpg";
 
 const HomeTourism = () => {
   return (

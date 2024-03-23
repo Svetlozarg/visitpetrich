@@ -5,6 +5,10 @@ import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import HotelIcon from "@mui/icons-material/Hotel";
 import { useRouter } from "next/navigation";
+import image1 from "../../../public/assets/widgets/museum.jpg";
+import image2 from "../../../public/assets/widgets/culture.jpg";
+import image3 from "../../../public/assets/widgets/stadium.jpg";
+import image4 from "../../../public/assets/widgets/hotel.jpg";
 
 type WidgetCardType = {
   image: string;
@@ -16,16 +20,14 @@ type WidgetCardType = {
 
 const WIDGET_CARDS_DATA: WidgetCardType[] = [
   {
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-museum_7VZpceUwp.jpg?updatedAt=1708164126233",
+    image: image1.src,
     icon: <LandscapeIcon sx={{ color: "common.white", fontSize: "6rem" }} />,
     title: "Туризъм",
     description: "Туристически обекти",
     link: "/tourism",
   },
   {
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/culture-petrich_04wZtXioU.jpg?updatedAt=1708164126114",
+    image: image2.src,
     icon: (
       <TheaterComedyIcon sx={{ color: "common.white", fontSize: "6rem" }} />
     ),
@@ -34,16 +36,14 @@ const WIDGET_CARDS_DATA: WidgetCardType[] = [
     link: "/culture",
   },
   {
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/sport-petrich_gZOCT2I6T.jpg?updatedAt=1708164126256",
+    image: image3.src,
     icon: <EmojiEventsIcon sx={{ color: "common.white", fontSize: "6rem" }} />,
     title: "Спорт",
     description: "Спортът в града",
     link: "/sport",
   },
   {
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/hotel-petrich_1wEZi2Rx_.jpg?updatedAt=1708164126007",
+    image: image4.src,
     icon: <HotelIcon sx={{ color: "common.white", fontSize: "6rem" }} />,
     title: "Настаняване",
     description: "Хотели и къщи за гости",
