@@ -1,21 +1,12 @@
 "use client";
-import ImageCarousel from "@/components/SmallComponents/ImageCarousel";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
-
-const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/9e423ca765e3b8f100e563c1bedcd97b_jpg0_205378_53709494_242835926526054_4128209856383418368_n_cTl5LKh56.jpg?updatedAt=1709645352468",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/15280_belasica_iLATY11RL.jpg?updatedAt=1709645194030",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/maxresdefault-600x400_RQClYCXso.jpg?updatedAt=1709645194143",
-];
+import image from "../../../../public/assets/tourism/giaur.jpg";
 
 const page = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Местност “Гяур Калеси”"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/9e423ca765e3b8f100e563c1bedcd97b_jpg2_205378_54516404_837756569891941_790626204142010368_n_b3liXanqh.jpg?updatedAt=1709643176904"
-      />
+      <PageHeader title="Местност “Гяур Калеси”" image={image} />
 
       <Stack
         width="100%"
@@ -75,14 +66,6 @@ const page = () => {
           Днес до местността се стига по добре маркирана пътека с начало най-
           старият квартал в града – Виздол.
         </Typography>
-      </Stack>
-
-      <Stack width="100%" px={1} textAlign="center" mb={4}>
-        <Typography component="h4" variant="h3" mb={4}>
-          Галерия
-        </Typography>
-
-        <ImageCarousel images={IMAGES_DATA} />
       </Stack>
     </Stack>
   );

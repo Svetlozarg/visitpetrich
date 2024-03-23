@@ -9,6 +9,7 @@ import image1 from "../../../public/assets/tourism/historyMuseum.jpg";
 import image2 from "../../../public/assets/tourism/sintica.jpg";
 import image3 from "../../../public/assets/tourism/samuil.jpg";
 import image4 from "../../../public/assets/tourism/houseVanga.jpg";
+import image5 from "../../../public/assets/tourism/typesTourism.webp";
 
 const TOURISM_DATA = [
   {
@@ -18,8 +19,7 @@ const TOURISM_DATA = [
   },
   {
     title: "Видове Туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg",
+    image: image5.src,
     link: "/tourism/vidove-turisam",
   },
 ];

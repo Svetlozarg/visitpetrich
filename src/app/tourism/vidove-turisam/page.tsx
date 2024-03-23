@@ -2,42 +2,43 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
+import imageHero from "../../../../public/assets/tourism/tourismHero.jpg";
+import cultural from "../../../../public/assets/tourism/typesTurism/cultural.jpg";
+import culture from "../../../../public/assets/tourism/typesTurism/culture.jpg";
+import panteleimon from "../../../../public/assets/tourism/typesTurism/panteleimon.jpg";
+import typesTourism from "../../../../public/assets/tourism/typesTurism/typesTourism.webp";
+import vodopad from "../../../../public/assets/tourism/typesTurism/vodopad.jpg";
+import wine from "../../../../public/assets/tourism/typesTurism/wine.jpg";
 
 const SightSeeingsData = [
   {
     title: "Културно-исторически туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/629abda2950e29b43b3e44ca4cb0367a_jpg0_205114_1200px-Petrich_STA50206_kuB8mU3nq.jpg?updatedAt=1709643222627",
+    image: cultural.src,
     link: "/tourism/pametnici",
   },
   {
     title: "Планински туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/24e22a50b90864d67eba71aee9d719a7_jpg2_204767_IMG_2677-1-1292x800_G6fR4zAkl.jpg?updatedAt=1709643592225",
+    image: vodopad.src,
     link: "/tourism/vodopadi",
   },
   {
     title: "Винен туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/223b7e13d1236e45c96efccc9ee4f1bc_jpg0_%D0%A0%D1%83%D0%BF%D0%B5%D0%BB1_HedrJCUh4.jpg?updatedAt=1709643323469",
+    image: wine.src,
     link: "/tourism/vinen-turizam",
   },
   {
     title: "Поклоннически туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/587097f7e4116af6187724b09279cf0f_jpg2_204758_1200px-Chourilovo-Monastery-1067x800_GZTJBiYTo.jpg?updatedAt=1709643524175",
+    image: panteleimon.src,
     link: "/tourism/manastiri",
   },
   {
     title: "Алтернативен и Селски туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/67e99f43f35a4e766e9a7d04daac5844_jpg0_%D1%80%D1%83%D0%BF%D0%B8%D1%82%D0%B5_VQhtvhjn4.jpg?updatedAt=1709643684315",
+    image: typesTourism.src,
     link: "/tourism/alternativen-selski-turizam",
   },
   {
     title: "Фестивален туризъм",
-    image:
-      "https://ik.imagekit.io/obelussoft/VisitPetrich/24f0bf1d31e381c4c3d2191ca421d4fa_jpg5_snimka_igri-1_coRd3RwTo.jpg?updatedAt=1709643381398",
+    image: culture.src,
     link: "/tourism/fastivali",
   },
 ];
@@ -50,7 +51,7 @@ const VidoveTurisamPage = () => {
       <PageHeader
         title="Видове Туризъм в Петрич"
         subtitle="Изживяване отвъд очакването"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09391_D2xMvGHh8.jpg?updatedAt=1708363605047"
+        image={imageHero}
       />
 
       <Stack p={{ xs: 2, sm: 2, md: 8 }}>

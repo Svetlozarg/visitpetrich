@@ -5,28 +5,34 @@ import { Stack, Typography } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LinkIcon from "@mui/icons-material/Link";
 import Link from "next/link";
+import image1 from "../../../../public/assets/tourism/museum/museum1.jpg";
+import image2 from "../../../../public/assets/tourism/museum/museum2.jpg";
+import image3 from "../../../../public/assets/tourism/museum/museum4.jpg";
+import image4 from "../../../../public/assets/tourism/museum/museum5.jpg";
+import image5 from "../../../../public/assets/tourism/museum/museum6.jpg";
+import image6 from "../../../../public/assets/tourism/museum/museum7.jpg";
+import image7 from "../../../../public/assets/tourism/museum/museum9.jpg";
+import image8 from "../../../../public/assets/tourism/museum/museum10.jpg";
+import image9 from "../../../../public/assets/tourism/museum/museum11.jpg";
+import image10 from "../../../../public/assets/tourism/museum/museum12.jpg";
 
 const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%2011_2EQi1MxM7.jpg?updatedAt=1708334010893",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%208_LI2faNiPV.jpg?updatedAt=1708334010955",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%202_JEqjQ9RbU.jpg?updatedAt=1708334010420",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%206_4rii2vDqs.jpg?updatedAt=1708334010350",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%209_Q0buW5OHt9.jpg?updatedAt=1708334009851",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%204_3pgP27NhM.jpg?updatedAt=1708334009665",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%2010_ZKXI7tKLm.jpg?updatedAt=1708334009628",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%205_6HdvqRJUn.jpg?updatedAt=1708334009566",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%2012_p7e2QCnuY.jpg?updatedAt=1708334011576",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%203_kA8rw2Otd.jpg?updatedAt=1708334011296",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D0%B9/museum%207_2nS8qjkGl.jpg?updatedAt=1708334011270",
+  image1.src,
+  image2.src,
+  image3.src,
+  image4.src,
+  image5.src,
+  image6.src,
+  image7.src,
+  image8.src,
+  image9.src,
+  image10.src,
 ];
 
 const PetrichMuseumPage = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Исторически Музей"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-museum_7VZpceUwp.jpg?updatedAt=1708164126233"
-      />
+      <PageHeader title="Исторически Музей" image={image1} />
 
       <Stack
         width="100%"

@@ -1,21 +1,15 @@
 "use client";
-import ImageCarousel from "@/components/SmallComponents/ImageCarousel";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
-
-const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/chitalishte1_s_knTQWpV.jpg?updatedAt=1709644888927",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/Gr_Petrich_-_ploshtada_-_nosht_GaQzHG5L3.jpg?updatedAt=1709644889047",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/IMAGE_14516354_40_0_PP9SJRJlN.jpg?updatedAt=1709645022891",
-];
+import image from "../../../../public/assets/home/chitalishte.jpeg";
 
 const page = () => {
   return (
     <Stack>
       <PageHeader
         title="Народно читалище “Братя Миладинови”"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/chitalishte_tu_AY7Oyx.jpeg?updatedAt=1709643053230"
-        imagePosition="top center"
+        image={image}
+        imagePosition="bottom center"
       />
 
       <Stack
@@ -60,14 +54,6 @@ const page = () => {
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%A7%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D1%89%D0%B5%20%22%D0%91%D1%80%D0%B0%D1%82%D1%8F%20%D0%9C%D0%B8%D0%BB%D0%B0%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%22,%20Tsentar,%20ul.%20%22Aleksandar%20Stambolijski%22%208,%202850%20Petrich+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           style={{ border: 0 }}
         />
-      </Stack>
-
-      <Stack width="100%" px={1} textAlign="center" mb={4}>
-        <Typography component="h4" variant="h3" mb={4}>
-          Галерия
-        </Typography>
-
-        <ImageCarousel images={IMAGES_DATA} />
       </Stack>
     </Stack>
   );

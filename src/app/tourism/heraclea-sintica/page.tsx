@@ -3,27 +3,35 @@ import ImageCarousel from "@/components/SmallComponents/ImageCarousel";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import img1 from "../../../../public/assets/tourism/sintica/img1.jpg";
+import img2 from "../../../../public/assets/tourism/sintica/img2.jpg";
+import img3 from "../../../../public/assets/tourism/sintica/img3.jpg";
+import img4 from "../../../../public/assets/tourism/sintica/img4.jpg";
+import img5 from "../../../../public/assets/tourism/sintica/img5.jpg";
+import img6 from "../../../../public/assets/tourism/sintica/img6.jpg";
+import img7 from "../../../../public/assets/tourism/sintica/img7.jpg";
+import img8 from "../../../../public/assets/tourism/sintica/img8.jpg";
+import img9 from "../../../../public/assets/tourism/sintica/img9.jpg";
+import img10 from "../../../../public/assets/tourism/sintica/img10.jpg";
+import img11 from "../../../../public/assets/tourism/sintica/img11.jpg";
 
 const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(1)-min_eDDWNTLPh.jpg",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/HOR03820-min_azWmI813e.JPG?updatedAt=1708357634737",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(4)-min_5gZlI_why.jpg?updatedAt=1708357634746",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/HOR03815-min_QObFdr7EpJ.JPG?updatedAt=1708357634553",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(2)-min_NYAwselh7.jpg?updatedAt=1708357634440",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F%20%D0%A1%D0%B8%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20(7)-min_UhTzOHIs6.jpg?updatedAt=1708357634395",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/DJI_0122-min_nQ-ca0lI-.JPG?updatedAt=1708357634275",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/DJI_0895-min_npt55-bIR.JPG?updatedAt=1708357633980",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/20190404_161501-min_g4WdwzI3E.jpg?updatedAt=1708357633968",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/20190404_163711-min_fJ2mUHa6R.jpg?updatedAt=1708357633435",
+  img2.src,
+  img3.src,
+  img4.src,
+  img5.src,
+  img6.src,
+  img7.src,
+  img8.src,
+  img9.src,
+  img10.src,
+  img11.src,
 ];
 
 const PetrichMuseumPage = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Хераклея Синтика"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A5%D0%B5%D1%80%D0%B0%D0%BA%D0%BB%D0%B5%D1%8F/DJI_0122-min_nQ-ca0lI-.JPG?updatedAt=1708357634275"
-      />
+      <PageHeader title="Хераклея Синтика" image={img1} />
 
       <Stack
         width="100%"

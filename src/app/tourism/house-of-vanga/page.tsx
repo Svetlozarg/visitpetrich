@@ -3,24 +3,17 @@ import ImageCarousel from "@/components/SmallComponents/ImageCarousel";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import img1 from "../../../../public/assets/tourism/houseVanga/img1.jpg";
+import img2 from "../../../../public/assets/tourism/houseVanga/img2.jpg";
+import img3 from "../../../../public/assets/tourism/houseVanga/img3.jpg";
+import img4 from "../../../../public/assets/tourism/houseVanga/img4.jpg";
 
-const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR09006_XreCdkqJ6.jpg?updatedAt=1708343476763",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR08980_lIbe3Kd8d.jpg?updatedAt=1708343476474",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR09017_w04mWlinX.jpg?updatedAt=1708343476219",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/DSC04432_lJBwLQtVK.jpg?updatedAt=1708343476147",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR08985_2gEOpFT93.jpg?updatedAt=1708343475943",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR08987_Tu0-pyL3H.jpg?updatedAt=1708343475890",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/DSC04453_U9caFpSqo.jpg?updatedAt=1708343476103",
-];
+const IMAGES_DATA = [img1.src, img3.src, img4.src];
 
 const PetrichMuseumPage = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Къща Ванга"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%9A%D1%8A%D1%89%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B3%D0%B0/HOR09006_XreCdkqJ6.jpg?updatedAt=1708343476763"
-      />
+      <PageHeader title="Къща Ванга" image={img2} />
 
       <Stack
         width="100%"

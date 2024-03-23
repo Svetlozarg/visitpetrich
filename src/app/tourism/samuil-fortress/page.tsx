@@ -2,21 +2,17 @@
 import ImageCarousel from "@/components/SmallComponents/ImageCarousel";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
+import img1 from "../../../../public/assets/tourism/samuil/img1.jpg";
+import img2 from "../../../../public/assets/tourism/samuil/img2.jpg";
+import img3 from "../../../../public/assets/tourism/samuil/img3.jpg";
+import img4 from "../../../../public/assets/tourism/samuil/img4.jpg";
 
-const IMAGES_DATA = [
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09097-min_mY7FalG3w.jpg?updatedAt=1708343708532",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09127-min_avpcKOAm6b.jpg?updatedAt=1708343707229",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09102-min_L5x2-VRd0.jpg?updatedAt=1708343706930",
-  "https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09137-min_5Kiqr4doB.jpg?updatedAt=1708343704975",
-];
+const IMAGES_DATA = [img2.src, img3.src, img4.src];
 
 const PetrichMuseumPage = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Самуилова Крепост"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A1%D0%B0%D0%BC%D1%83%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%9A%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82/HOR09097-min_mY7FalG3w.jpg?updatedAt=1708343708532"
-      />
+      <PageHeader title="Самуилова Крепост" image={img1} />
 
       <Stack
         width="100%"
