@@ -5,7 +5,7 @@ import Image from "next/image";
 import image from "../../../public/assets/history/cityHero.jpg";
 import image2 from "../../../public/assets/history/cityHistory.jpg";
 import image3 from "../../../public/assets/history/thuderCity.jpg";
-import image4 from "../../../public/assets/history/coldCity.jpg";
+import image4 from "../../../public/assets/coldCity.jpg";
 import image5 from "../../../public/assets/history/panoramaCity.jpg";
 import image6 from "../../../public/assets/history/parkPetrich.jpg";
 
