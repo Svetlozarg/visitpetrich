@@ -11,6 +11,7 @@ import { getQueryAllPlaces } from "@/services/Places/apiPlacesGetQueries";
 import Button from "@/components/MUIComponents/Button";
 import { useRouter } from "next/navigation";
 import AccommodationCard from "@/components/PageComponents/Accommodation/AccommodationCard";
+import image from "../../../public/assets/history/cityHistory.jpg";
 
 const AccommodationPage = () => {
   const router = useRouter();
@@ -30,10 +31,7 @@ const AccommodationPage = () => {
 
   return (
     <Stack>
-      <PageHeader
-        title="Настаняване"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%BF%D0%B5%D1%82%D1%80_7rqxZd3WO.png?updatedAt=1709586646698"
-      />
+      <PageHeader title="Настаняване" image={image} />
 
       <Stack width="100%" maxWidth="1400px" py={10} px={2} m="0 auto">
         {placesData ? (

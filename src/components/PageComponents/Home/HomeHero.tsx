@@ -1,6 +1,7 @@
 import Button from "@/components/MUIComponents/Button";
 import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
+import homeHero from "../../../../public/assets/home/homehero.jpg";
 
 const HomeHero = () => {
   return (
@@ -8,8 +9,7 @@ const HomeHero = () => {
       width="100vw"
       height="calc(100vh - 90px)"
       sx={{
-        background:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-hero_iXeuCf7XI.jpg?updatedAt=1708161070606')",
+        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${homeHero.src}')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",

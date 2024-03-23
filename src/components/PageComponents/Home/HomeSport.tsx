@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import image from "../../../../public/assets/home/sport.jpg";
 
 const HomeSport = () => {
   return (
@@ -52,8 +53,7 @@ const HomeSport = () => {
           width: "100%",
           maxWidth: "800px",
           height: "500px",
-          backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DJI_0077-min_mwKV4YC56.jpg')",
+          backgroundImage: `url('${image.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",

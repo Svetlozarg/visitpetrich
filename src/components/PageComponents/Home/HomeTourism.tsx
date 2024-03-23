@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import image from "../../../../public/assets/home/беласица-планина.jpg";
 
 const HomeTourism = () => {
   return (
@@ -57,8 +58,7 @@ const HomeTourism = () => {
           width: "100%",
           maxWidth: "800px",
           height: "500px",
-          backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/HOR09102%20(1)_5qRy2wlXs.jpg?updatedAt=1708207084091')",
+          backgroundImage: `url('${image.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",

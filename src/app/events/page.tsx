@@ -10,6 +10,7 @@ import { CircularProgress, Stack, Typography } from "@mui/material";
 import { getQueryAllEvents } from "@/services/Events/apiEventsGetQueries";
 import { callApi } from "@/services/callApi";
 import Scheduler from "@/components/SmallComponents/Scheduler/Scheduler";
+import image from "../../../public/assets/culture/festival.jpg";
 
 const EventsPage = () => {
   const [eventsData, setEventsData] = useState<EventDataType[]>();
@@ -28,10 +29,7 @@ const EventsPage = () => {
 
   return (
     <Stack>
-      <PageHeader
-        title="Събития"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/image_qD1ai8B2N.jpg?updatedAt=1708540788414"
-      />
+      <PageHeader title="Събития" image={image} />
 
       {eventsData ? (
         <Stack>

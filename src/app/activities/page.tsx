@@ -1,6 +1,10 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
+import image1 from "../../../public/assets/activities/shadravan.jpeg";
+import image2 from "../../../public/assets/activities/cinema.jpg";
+import image3 from "../../../public/assets/activities/bilard.jpg";
+import image4 from "../../../public/assets/activities/ribolov.jpg";
 
 const ActivitiesPage = () => {
   return (
@@ -8,7 +12,7 @@ const ActivitiesPage = () => {
       <PageHeader
         title="Забавления в Петрич"
         subtitle="Изживяване отвъд очакването"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D1%84%D0%BE%D0%BD%D1%82%D0%B0%D0%BD-min_49lZ66nNj.jpeg"
+        image={image1}
       />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
@@ -24,8 +28,7 @@ const ActivitiesPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/cinema-min_PPyKHTTXt.jpg')",
+              backgroundImage: `url('${image2.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -75,8 +78,7 @@ const ActivitiesPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/biliard-min_Odpn5Mqia.jpg')",
+              backgroundImage: `url('${image3.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -144,8 +146,7 @@ const ActivitiesPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/fish-min_7m9PkQUW_.jpg')",
+              backgroundImage: `url('${image4.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",

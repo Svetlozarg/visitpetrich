@@ -2,6 +2,12 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import image from "../../../public/assets/history/cityHero.jpg";
+import image2 from "../../../public/assets/history/cityHistory.jpg";
+import image3 from "../../../public/assets/history/thuderCity.jpg";
+import image4 from "../../../public/assets/history/coldCity.jpg";
+import image5 from "../../../public/assets/history/panoramaCity.jpg";
+import image6 from "../../../public/assets/history/parkPetrich.jpg";
 
 const AboutPetrichPage = () => {
   return (
@@ -9,7 +15,7 @@ const AboutPetrichPage = () => {
       <PageHeader
         title="Петрич - История, Красота, Вдъхновение"
         subtitle="Изживяване отвъд очакването"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/_Group%200_-6%20images_f7BfZzled.jpg?updatedAt=1708205353498"
+        image={image}
       />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
@@ -25,8 +31,7 @@ const AboutPetrichPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DJI_0074-min_YexJSmkF_.jpg ')",
+              backgroundImage: `url('${image2.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -120,8 +125,7 @@ const AboutPetrichPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0847a_R7eHOrore.jpg?updatedAt=1708205353626')",
+              backgroundImage: `url('${image3.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -133,8 +137,7 @@ const AboutPetrichPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_0272_Gf0BX4qu7.JPG?updatedAt=1708205354139')",
+              backgroundImage: `url('${image4.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -176,7 +179,7 @@ const AboutPetrichPage = () => {
           </Typography>
 
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_8353aa_i4B76oTRR.jpg?updatedAt=1708205354223"
+            src={image5}
             alt="Park Petrich"
             width={100}
             height={100}
@@ -237,8 +240,7 @@ const AboutPetrichPage = () => {
               width: "100%",
               maxWidth: "800px",
               height: "500px",
-              backgroundImage:
-                "url('https://ik.imagekit.io/obelussoft/VisitPetrich/DSC_3316-min_sZnsN6zvp.jpg')",
+              backgroundImage: `url('${image6.src}')`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",

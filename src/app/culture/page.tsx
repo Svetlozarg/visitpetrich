@@ -1,6 +1,9 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import image from "../../../public/assets/culture/kukeri.jpg";
+import image2 from "../../../public/assets/culture/narodni-tanci.jpg";
+import image3 from "../../../public/assets/culture/festival.jpg";
 
 const CulturePage = () => {
   return (
@@ -8,7 +11,7 @@ const CulturePage = () => {
       <PageHeader
         title="Културни събития и Творчески Пътеки"
         subtitle="Изживяване отвъд очакването"
-        image="https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%B0%D1%81%D0%B4_kCmgcHf6L.jpg?updatedAt=1708365131671"
+        image={image}
       />
 
       <Stack width="100%" maxWidth="1600px" m="0 auto" gap={8} py={10} px={4}>
@@ -22,7 +25,7 @@ const CulturePage = () => {
             Културата в Петрич
           </Typography>
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/stanchinarski-igri-petrich3_jE6TIk4DXs.jpg?updatedAt=1708365494122"
+            src={image2}
             alt="Park Petrich"
             width={100}
             height={100}
@@ -65,7 +68,7 @@ const CulturePage = () => {
           gap={4}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/VisitPetrich/image_qD1ai8B2N.jpg?updatedAt=1708540788414"
+            src={image3}
             alt="Park Petrich"
             width={100}
             height={100}

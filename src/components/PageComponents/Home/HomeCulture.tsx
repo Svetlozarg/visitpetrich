@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import image from "../../../../public/assets/home/chitalishte.jpeg";
 
 const HomeCulture = () => {
   return (
@@ -15,8 +16,7 @@ const HomeCulture = () => {
           width: "100%",
           maxWidth: "800px",
           height: "500px",
-          backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/VisitPetrich/%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%81%D1%82%D0%B5%D0%BD%D0%B0%20(11)_3La4R8zN7.jpg?updatedAt=1708207456870')",
+          backgroundImage: `url('${image.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",

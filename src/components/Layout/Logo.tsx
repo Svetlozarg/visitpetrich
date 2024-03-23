@@ -1,13 +1,14 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../public/assets/petrich-logo-bg.webp";
 
 const Logo = () => {
   return (
     <Box width="100%" maxWidth={{ xs: "150px", sm: "150px", md: "180px" }}>
       <Link href="/">
         <Image
-          src="https://ik.imagekit.io/obelussoft/VisitPetrich/petrich-logo-bg_ujgzRJcLS.png"
+          src={logo}
           alt="VisitPetrich Logo"
           width={250}
           height={70}

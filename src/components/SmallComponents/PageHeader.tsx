@@ -1,9 +1,10 @@
 import { Stack, Typography } from "@mui/material";
+import { StaticImageData } from "next/image";
 
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
-  image: string;
+  image: string | StaticImageData;
   imagePosition?: string;
 }
 
@@ -20,7 +21,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({
       justifyContent="center"
       alignItems="center"
       sx={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(${image})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(${
+          typeof image === "string" ? image : image.src
+        })`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: imagePosition,
